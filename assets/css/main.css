@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'SFPro';
+	src: url('fonts/SF-Pro-Text-Regular.eot');
+	src: local('☺'), url('../fonts/SFPro/SF-Pro-Text-Regular.woff') format('woff'), url('../fonts/SFPro/SF-Pro-Text-Regular.ttf') format('truetype'), url('../fonts/SFPro/SF-Pro-Text-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 /* clear */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
@@ -46,7 +56,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Nunito", sans-serif;
+  font-family: "SFPro", "Nunito", sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -89,6 +99,17 @@ img{
 
 button{
 	cursor: pointer;
+}
+
+.hidden{
+	display: none;
+}
+
+.main-about-staff{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 /********************************/
@@ -171,12 +192,12 @@ header{
 }
 
 .header-content-text{
-	width: 33.4vw;
+	width: 47.4vw;
 	margin-top: 6.15vw;
 }
 
 .header-content-text > h3{
-	font-size: 3vw;
+	font-size: 2.35vw;
 	color: #fefefe;
 	letter-spacing: -0.04vw;
 	font-weight: normal;
@@ -193,7 +214,7 @@ header{
 	letter-spacing: -0.03vw;
   color: #fefefe;
 	font-size: 1.36vw;
-	max-width: 80%;
+	max-width: 78%;
 	line-height: 1.86;
 }
 
@@ -218,7 +239,7 @@ header{
 /******* MAIN **********/
 
 .main-top{
-	width: 60.5vw;
+	width: 82vw;
 	padding: 0 5vw;
 	margin-top: 4.68vw;
 	margin-left: auto;
@@ -229,7 +250,7 @@ header{
 	letter-spacing: -0.04vw;
   text-align: center;
 	line-height: 1.42;
-	font-size: 2.5vw;
+	font-size: 2.25vw;
 	font-weight: normal;
 }
 
@@ -239,7 +260,6 @@ header{
 
 .main-features > .row{
 	padding-left: 6.65vw;
-  padding-right: 6.65vw;
 }
 
 .main-features > .row:nth-child(2){
@@ -252,6 +272,7 @@ header{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	padding-left: 0;
 }
 
 .row:first-child > .main-feature:first-child{
@@ -290,7 +311,7 @@ header{
   letter-spacing: -0.03vw;
   color: #66666d;
 	margin-top: 1.95vw;
-	width: 29vw;
+	width: 30.2vw;
 }
 
 .main-feature > ul{
@@ -337,7 +358,7 @@ header{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 32vw;
+	width: 34vw;
 }
 
 .main-features-btn{
@@ -393,11 +414,11 @@ header{
 	width: 25.74vw;
 }
 
-.main-about-staff:nth-child(2){
+.main-about-staff.first-el{
 	margin-left: 18.26vw;
 }
 
-.main-about-staff:nth-child(3){
+.main-about-staff.last-el{
 	margin-left: 10.9vw;	
 }
 
@@ -415,6 +436,7 @@ header{
   line-height: 1.85;
   letter-spacing: -0.03vw;
   text-align: center;
+	width: 26.36vw;
 }
 
 .main-about-staff > span{
@@ -551,7 +573,7 @@ footer{
 }
 
 .footer-main-left-text{
-	width: 35vw;
+	width: 33vw;
 }
 
 .footer-main-left-text > p{
@@ -564,7 +586,10 @@ footer{
   color: #4a4a4a;
 }
 
-.footer-main-left-bottom{
+.footer-bottom{
+	width: 100%;
+	padding-left: 4.58vw;
+	padding-right: 4.58vw;
 	margin-top: 8.5vw;
 }
 
@@ -621,10 +646,9 @@ footer{
 		font-size: 1.27vw;
     color: #bebebe;
     display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 0.65vw;
+    position: static;
     pointer-events: none;
+	  margin-left: -1.2vw;
 }
 
 .footer-main-right{
@@ -637,7 +661,7 @@ footer{
 }
 
 .footer-main-right-links:nth-child(2){
-	margin-right: 12.5vw;
+	margin-right: 10.54vw;
 }
 
 .footer-main-right-links > h6{
@@ -664,12 +688,7 @@ footer{
 	font-size: 0;
 }
 
-.footer-main-right > .row:last-child{
-	margin-top: 4.4vw;
-	text-align: right;
-}
-
-.footer-main-right > .row:last-child > span{
+.footer-main-right-bottom > span{
 	font-size: 1.27vw;
   font-weight: normal;
   font-style: normal;
@@ -680,7 +699,7 @@ footer{
 	text-transform: uppercase;
 }
 
-.footer-main-right > .row:last-child > a{
+.footer-main-right-bottom > a{
 	font-size: 1.27vw;
   font-weight: 600;
   font-style: normal;
