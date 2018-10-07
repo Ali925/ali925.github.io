@@ -89,6 +89,10 @@ button{
 	position: relative;
 }
 
+body{
+	    overflow-x: hidden;
+}
+
 .left{
 	float: left;
 }
@@ -133,18 +137,10 @@ header{
   background-position-x: right;
   background-size: 45.5%;
   background-position-y: 0;
-/*	height: 34.75rem;*/
 	box-shadow: 0 0.15625rem 4.21875rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-container{
-/*
-	background-image: url(../img/oval.png);
-	background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: 45.5%;
-  background-position-y: 0;
-*/
 	max-width: 80rem;	
 	margin: 0 auto;
 	height: 100%;
@@ -897,6 +893,21 @@ footer{
 
 }
 */
+
+
+@media only screen and (min-width: 1280px){
+	.left-circle{
+		width: 48.4375rem;
+		border-radius: 100%;
+		left: -32%;
+	}
+	
+	.right-circle{
+		width: 48.4375rem;
+		border-radius: 100%;
+		right: -32%;
+	}
+}
 
 @media only screen and (min-width: 1330px){
 	header{
