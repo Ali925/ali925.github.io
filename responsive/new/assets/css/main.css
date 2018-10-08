@@ -89,8 +89,9 @@ button{
 	position: relative;
 }
 
-body{
+html, body{
 	    overflow-x: hidden;
+	overflow-y: overlay;
 }
 
 .left{
