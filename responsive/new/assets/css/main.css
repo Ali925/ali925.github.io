@@ -484,6 +484,7 @@ header{
 
 .main-about-staff{
 	width: 27%;
+	min-height: 28rem;
 }
 
 .main-about-staff.first-el{
@@ -512,8 +513,10 @@ header{
 }
 
 .main-about-staff > span{
+	    bottom: 0;
+    position: absolute;
+    width: 100%;
 	display: block;
-	margin-top: 13%;
 	font-size: 1.015625rem;
   font-weight: normal;
   font-style: italic;

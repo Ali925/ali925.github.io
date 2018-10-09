@@ -1,10 +1,20 @@
 header{
 	width: 100%;
+	background-image: none;
+	background-color: #0061fc;
+/*
 	background-color: #036bf5;
 	background-image: url(../img/untitled-4@3x.png);
 	background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: 0;
+*/
+}
+
+.header-img{
+	  position: absolute;
+    background-color: #035fda;
+    height: 100%;
 }
 
 .header-content-text{
@@ -17,7 +27,7 @@ header{
 }
 
 .header-content{
-	margin-bottom: 6%;
+	margin-bottom: 3%;
 }
 
 .main-content{
@@ -326,6 +336,7 @@ a.show-leftnav{
 	margin-top: 8%;
 }
 
+/*
 @media only screen and (min-width: 1800px) {
 	.header-content{
 		margin-bottom: 8%;	
@@ -413,7 +424,7 @@ a.show-leftnav{
 		font-size: 1.115625rem;
 	}
 }
-
+*/
 @media only screen and (max-width: 1240px) {
 	.header-content-text{
 		    width: 32%;
@@ -430,12 +441,16 @@ a.show-leftnav{
 	}
 }
 
+
 @media only screen and (max-width: 1035px) {
 	header{
 		background-image: none;
 	}
+	.header-img{
+		display: none;
+	}
 	.header-content-text{
-		    width: 100%;
+		    width: 90%!important;
 				margin-top: 6.5%;
 	}
 	.fmain-nav + .left-circle{
@@ -513,9 +528,9 @@ a.show-leftnav{
 	}
 	
 	.fmain-content{
-		float: none;
-		width: 90%;
-    margin-left: 5%;
+		float: none!important;
+		width: 90%!important;
+    margin-left: 5%!important;
 	}
 	
 	.fmain-nav{
