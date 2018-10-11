@@ -1,0 +1,99 @@
+.main-content > main{
+	padding-right: 5%;
+}
+
+.faq-box{
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+  border: solid 1px #f0f0f0;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.faq-box.active{
+	height: auto;
+	padding-bottom: 0;
+}
+
+.faq-box.active > a{
+	background-image: url(../img/circle-remove@3x.png);
+}
+
+.faq-box.active > .faq-box-content{
+	display: block;
+}
+
+.faq-box:not(:first-child){
+	margin-top: 1%;
+}
+
+.faq-box > h5{
+	font-size: 1.3281rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: -0.02343rem;
+  color: #000000;
+}
+
+.faq-box > a{
+	   position: absolute;
+			background-image: url(../img/circle-add@3x.png);
+        top: 1.25rem;
+    right: 1.5rem;
+	    width: 1.75rem;
+    height: 1.75rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.faq-box-content{
+	display: none;
+	    width: 96.5%;
+	    margin-top: 2.5%;
+    margin-bottom: 3.5%;
+}
+
+.faq-box-content > p{
+	font-size: 1.0156rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.69;
+  letter-spacing: -0.02343rem;
+  color: #66666d;
+}
+
+.faq-box-content > p:not(:first-child){
+	    margin-top: 1.5%;
+}
+
+@media only screen and (max-width: 1086px) {
+	.header-content-nav > ul > li:not(:first-child){
+		margin-left: 2%;
+	}
+	.header-content-text{
+		    width: 60%;
+	}
+	.header-content-nav{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 905px) {
+	.header-content-text{
+		    width: 100%;
+	}
+	.header-content-nav{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	.faq-box > a{
+		display: none;
+	}
+}

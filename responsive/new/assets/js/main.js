@@ -69,4 +69,26 @@ $(document).ready(function(){
 		}
 	});
 	
+	$(".faq-box").click(function(){
+		if($(this).find("a").css("display") == "none"){
+			var key = false;
+			if($(this).hasClass("active"))
+				key = true;
+
+			$(".faq-box").removeClass("active");
+			if(!key)
+				$(this).addClass("active");
+		}
+	});
+	
+	$(".faq-box > a").click(function(){
+		var key = false;
+		if($(this).parent().hasClass("active"))
+			key = true;
+		
+		$(".faq-box").removeClass("active");
+		if(!key)
+			$(this).parent().addClass("active");
+	});
+	
 });
