@@ -1,0 +1,117 @@
+.cmain-content-image{
+	width: 33.5%;
+	padding-left: 7%;
+}
+
+.cmain-content-image > img{
+	width: 86%;
+}
+
+.cmain-content-form{
+	width: 66.5%;
+}
+
+.cmain-content-form-text{
+	font-size: 1.25rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: -0.03125rem;
+  color: #000000;
+	    width: 88%;
+}
+
+.cmain-content-form > form label{
+	display: block;
+	margin-bottom: 2%;
+	font-size: 1.0156rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.03125rem;
+  color: #636363;
+}
+
+.cmain-content-form > form input, .cmain-content-form > form textarea{
+	display: block;
+	border-radius: 0.2rem;
+	width: 100%;
+  border: solid 0.05rem #e3e3e3;
+  background-color: #ffffff;
+	padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+form{
+	width: 90%;
+	margin-top: 4%;
+}
+
+form > .row{
+	width: 100%;
+	margin-bottom: 2.5%;
+}
+
+form > .row:first-child > .form-det{
+	width: 47.5%;
+}
+
+form > button{
+		width: 10.140625rem;
+    height: 3.59375rem;
+	    margin-top: 2%;
+    border-radius: 1.796875rem;
+    border: 0;
+    background-color: #5abe80;
+    box-shadow: 0 0.546875rem 1.5625rem 0 rgba(53, 53, 53, 0.35);
+    font-size: 1.09375rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: -0.0234375rem;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+header{
+	z-index: 3;
+}
+
+.main-content > main{
+	z-index: 3;
+	padding-right: 5%;
+}
+
+.top-circle{
+		    z-index: 1;
+    position: absolute;
+    top: -22%;
+    right: 1%;
+    height: 50.4375rem;
+    width: 67.4375rem;
+    border-radius: 100%;
+    transform: rotate(157deg);
+    opacity: 0.32;
+    background-color: #e5f1ff;
+}
+
+@media only screen and (max-width: 705px) {
+	.cmain-content-image{
+		display: none;
+	}
+	.cmain-content-form{
+		width: 100%;
+		float: none;
+	}
+	.cmain-content-form-text{
+		width: 95%
+	}
+	form{
+		width: 95%;
+	}
+}
