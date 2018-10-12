@@ -142,7 +142,19 @@ header{
 	width: 88%;
 }
 
+#fetBl6 .fmain-content-top > h3{
+	width: 90%;
+}
+
+#fetBl6 .fmain-content-top > p{
+	width: 88%;
+}
+
 #fetBl2 .fmain-content-top > p{
+	width: 87%;
+}
+
+#fetBl5 .fmain-content-top > p{
 	width: 87%;
 }
 
@@ -175,6 +187,10 @@ header{
 }
 
 #fetBl4 .fmain-content-feature > h5{
+	margin-top: 7%;
+}
+
+#fetBl6 .fmain-content-feature > h5{
 	margin-top: 7%;
 }
 
@@ -292,6 +308,24 @@ a.show-leftnav{
 	width: 88%;
 }
 
+#fetBl6 .fmain-content-feature{
+	width: 100%;
+	text-align: left;
+}
+
+#fetBl6 .fmain-content-feature > h5{
+	width: 90%;
+}
+
+#fetBl6 .fmain-content-feature > ul{
+	margin-top: 1.5%;
+}
+
+#fetBl6 .fmain-content-feature > ul > li > p{
+	margin-top: 1.5%;
+	width: 88%;
+}
+
 .fmain-content-image{
 		background-color: #fac152;
     border-radius: 3rem;
@@ -313,7 +347,18 @@ a.show-leftnav{
 	padding-top: 0.65rem;
 }
 
+#fet5.active > span{
+	width: 68%;
+	height: 4.75rem;
+	padding-top: 0.65rem;
+}
+
 #fet4.active > span{
+	height: 5rem;
+	width: 78%;
+}
+
+#fet6.active > span{
 	height: 5rem;
 	width: 78%;
 }
@@ -566,7 +611,7 @@ a.show-leftnav{
     margin-left: 5%;
 	}
 	
-	#fetBl3 .fmain-content-features, #fetBl4 .fmain-content-features{
+	#fetBl3 .fmain-content-features, #fetBl4 .fmain-content-features, #fetBl6 .fmain-content-features{
 		width: 100%;
 		margin-left: 0;
 	}
@@ -576,6 +621,10 @@ a.show-leftnav{
 	}
 	
 	#fetBl4 .fmain-content-feature > ul > li > p{
+		width: 92%;
+	}
+	
+	#fetBl6 .fmain-content-feature > ul > li > p{
 		width: 92%;
 	}
 	

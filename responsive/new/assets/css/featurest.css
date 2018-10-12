@@ -1,5 +1,5 @@
 .header-content-text{
-	width: 36%;
+	width: 46%;
 }
 
 .header-content-text > p{
@@ -110,7 +110,7 @@
 
 @media only screen and (max-width: 1165px){
 	.header-content-text {
-		width: 42%;
+		width: 50%;
 	}
 }
 

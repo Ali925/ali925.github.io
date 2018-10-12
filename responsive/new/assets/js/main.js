@@ -59,14 +59,12 @@ $(document).ready(function(){
 	$(".fmain-nav li > a").click(function(){
 		var id = $(this).parent().attr("id").substr(3);
 		currentFeatureBlock = id;
-		if(id < 5){
 			$(".fmain-nav li").removeClass("active");
 			$(this).parent().addClass("active");
 			$(".fmain-content").hide();		
 			if($(window).width() > 600){
 				$("#fetBl"+id).show();
 			}
-		}
 	});
 	
 	$(".faq-box").click(function(){
