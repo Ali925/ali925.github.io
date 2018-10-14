@@ -1,11 +1,13 @@
 .cmain-content-image{
 	width: 33.5%;
 /*	padding-left: 7%;*/
+	overflow: hidden;
 }
 
 .cmain-content-image > img{
 /*	width: 86%;*/
-	width: 100%;
+	    width: 200%;
+	    left: -100%;
 }
 
 .cmain-content-form{

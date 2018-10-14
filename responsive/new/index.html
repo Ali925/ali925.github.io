@@ -212,21 +212,28 @@
 						</div>
 						<span>2018 Glorri Inc.</span>
 						<div class="footer-main-left-bottom-lang">
-							<select name="lang" id="lang">
-								<option value="en">English</option>
-							</select>
-<!--
-							<div class="select-items">
-								<div>English</div>
+							<div class="custom-lang-select">
+								<select name="lang" id="lang">
+									<option value="en">English</option>
+									<option value="ru">Russian</option>
+									<option value="fr">French</option>
+									<option value="de">Deutsch</option>
+								</select>
+								<div class="select-selected">English</div>
+								<div class="select-items">
+									<div data-id="en" class="selected">English</div>
+									<div data-id="ru">Russian</div>
+									<div data-id="fr">French</div>
+									<div data-id="de">Deutsch</div>
+								</div>
 							</div>
--->
 						</div>
 					</div>
 					<div class="footer-main-right-bottom right">
 						<span>Sign up as</span>
-						<a href="#">Recruiter</a>
+						<a href="javascript:void(0);" onclick="showModal('recruiterModal');">Recruiter</a>
 						<span>or</span>
-						<a href="#">Talent</a>
+						<a href="javascript:void(0);" onclick="showModal('talentModal');">Talent</a>
 					</div>
 			</div>
 		</footer>

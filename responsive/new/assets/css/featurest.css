@@ -1,5 +1,21 @@
+header{
+	background-image: none;
+}
+
+.header-content{
+	padding-right: 5%;
+}
+
+.header-content-image{
+	    width: 53%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    margin-right: 5%;
+}
+
 .header-content-text{
-	width: 46%;
+	width: 49%;
 }
 
 .header-content-text > p{
@@ -111,6 +127,22 @@
 @media only screen and (max-width: 1165px){
 	.header-content-text {
 		width: 50%;
+	}
+	.header-content-image{
+		  width: 49%;
+    	top: 14%;	
+	}
+}
+
+@media only screen and (max-width: 1110px){
+	.header-content-text{
+		width: 47%;
+	}
+	.header-content-text > p{
+		max-width: 88%;
+	}
+	.header-content-image{
+		top: 22%;
 	}
 }
 

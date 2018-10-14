@@ -96,6 +96,19 @@ $(document).ready(function(){
 		$("html").removeClass("modal-open");
 	});
 	
+	$(".select-selected").click(function(){
+		$(this).next().toggle();
+	});
+	
+	$(".select-items > div").click(function(){
+		var value = $(this).data("id");
+		$(".select-selected").text($(this).text());
+		$(".select-items > div").removeClass("selected");
+		$(this).addClass("selected");
+		$(".custom-lang-select > select").val(value);
+		$(".select-items").hide();
+	});
+	
 });
 
 function showModal(id){

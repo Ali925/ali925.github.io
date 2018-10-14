@@ -701,7 +701,7 @@ footer{
 	margin-left: 1.6015625rem;
 }
 
-.footer-main-left-bottom-lang > select{
+.custom-lang-select select{
 	font-size: 1.015625rem;
   font-weight: normal;
   font-style: normal;
@@ -722,7 +722,7 @@ footer{
 	padding-right: 0.9609375rem;
 }
 
-.footer-main-left-bottom > .footer-main-left-bottom-lang:after{
+.footer-main-left-bottom .select-selected:after{
 		content: '\f107';
     font-family: FontAwesome;
 		font-size: 1.015625rem;
@@ -730,7 +730,95 @@ footer{
     display: inline-block;
     position: static;
     pointer-events: none;
-	  margin-left: -0.9609375rem;
+	  margin-left: 0.439063rem;
+}
+
+.custom-lang-select select{
+	    display: none;
+    overflow: visible !important;
+}
+
+.select-selected{
+/*
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+*/
+    cursor: pointer;
+    user-select: none;
+	
+	font-size: 1.015625rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.15;
+  letter-spacing: -0.0234375rem;
+  color: #797979;
+	background: transparent;
+  border: none;
+  -webkit-appearance: none;
+	-moz-appearance: none;
+  appearance: none;
+	background-image: url(../img/world@2x.png);
+	background-repeat: no-repeat;
+  background-size: 1.25rem;
+	background-position-y: 0.3125rem;
+  padding-left: 1.6015625rem;
+	padding-right: 0.9609375rem;
+}
+
+.select-items{
+    background-color: white;
+    color: #797979;
+    border: solid 1px #797979;
+    border-radius: 8%;
+	display: none;
+	    position: absolute;
+    top:  calc(-300% - 45px);
+    left: 0px;
+    z-index: 99;
+}
+
+.select-items:after, .select-items:before{
+	top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.select-items:after{
+	    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+.select-items:before{
+	border-color: rgba(102, 102, 102, 0);
+    border-top-color: #666666;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.select-items div{
+	    color: #797979;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items div.selected{
+	color: #036bf5;
+}
+
+.select-items div:last-child{
+	border: none;
 }
 
 .footer-main-right{
