@@ -39,9 +39,9 @@
 					</nav>
 					<nav class="header-login right">
 							<span>Sign up as</span>
-							<a href="#">Recruiter</a>
+							<a href="javascript:void(0);" onclick="showModal('recruiterModal');">Recruiter</a>
 							<span>or</span>
-							<a href="#">Talent</a>
+							<a href="javascript:void(0);" onclick="showModal('talentModal');">Talent</a>
 					</nav>
 					<div class="header-top-mob right">
 						<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -57,9 +57,9 @@
 							</a>
 							<div class="signup">
 								<span>Sign up as</span>
-								<a href="#">Recruiter</a>
+								<a href="javascript:void(0);" onclick="showModal('recruiterModal');">Recruiter</a>
 								<span>or</span>
-								<a href="#">Talent</a>
+								<a href="javascript:void(0);" onclick="showModal('talentModal');">Talent</a>
 							</div>
 							<div class="close-btn">
 								<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
@@ -200,6 +200,229 @@
 			</div>
 		</footer>
 	</div>
+	
+	<div class="modal" id="talentModal">
+		<div class="modal-inner">
+		<div class="modal-window">
+			<div class="modal-window-leftimg left">
+				<div class="modal-window-leftimg-header">
+					<h2>Are you ready to beat the crowd?</h2>
+				</div>
+				<div class="modal-window-leftimg-play">
+					<a href="#"><img src="assets/img/button-circle-play@3x.png" alt=""></a>
+				</div>
+				<div class="modal-window-leftimg-foot">
+					<p>Let the world hear your voice</p>
+				</div>
+			</div>
+			<div class="modal-window-content right">
+				<div class="modal-window-header">
+					<h2>Sign up</h2>
+				</div>
+				<div class="modal-window-text">
+					<p>Let’s go beyond the horizon where the top talents meet the right companies. <b>Now make your coffee, let’s do it together in minutes!</b></p>
+				</div>
+				<div class="modal-window-form">
+					<form>
+						<div class="row clearfix">
+							<div class="form-group left">
+								<label for="name">First name</label>
+								<input type="text" id="name" name="name">
+							</div>
+							<div class="form-group right">
+								<label for="surname">Last name</label>
+								<input type="text" id="surname" name="surname">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="pass">Password</label>
+								<input type="password" id="pass" name="pass">
+							</div>
+						</div>
+						<div class="row clearfix">
+							<div class="submit-btn left">
+								<button type="submit">Sign up</button>
+							</div>
+							<div class="social-btns right">
+								<span>Or sign up with Social Media</span>
+								<a href="#" class="google-btn"><img src="assets/img/logo-google-plus@3x.png" alt=""></a>
+								<a href="#" class="link-btn"><img src="assets/img/fill-9@3x.png" alt=""></a>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<p>By signing up, you agree to out <a href="#">Terms of Agreement</a></p>
+							</div>
+							<div>
+								<a href="#">Already have an account?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-close-btn">
+				<img src="assets/img/simple-remove@3x.png" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="recruiterModal">
+		<div class="modal-inner">
+		<div class="modal-window">
+			<div class="modal-window-leftimg left">
+				<div class="modal-window-leftimg-header">
+					<h2>Yogamize your entire hiring process with us</h2>
+				</div>
+				<div class="modal-window-leftimg-foot">
+					<p>Create Employer account.</p>
+					<p>Enjoy <b>premium features for free.</b></p>
+				</div>
+			</div>
+			<div class="modal-window-content right">
+				<div class="modal-window-header">
+					<h2>Sign up</h2>
+				</div>
+				<div class="modal-window-text">
+					<p>Glorri takes you to recruiting heaven.</p>
+				</div>
+				<div class="modal-window-form">
+					<form>
+						<div class="row clearfix">
+							<div class="form-group left">
+								<label for="name">First name</label>
+								<input type="text" id="name" name="name">
+							</div>
+							<div class="form-group right">
+								<label for="surname">Last name</label>
+								<input type="text" id="surname" name="surname">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="company">Company</label>
+								<input type="company" id="company" name="company">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="email">Work email</label>
+								<input type="email" id="email" name="email">
+							</div>
+						</div>
+						<div class="row clearfix">
+							<div class="form-group left">
+								<label for="pass">Password</label>
+								<input type="password" id="pass" name="pass">
+							</div>
+							<div class="form-group right">
+								<label for="cpass">Confirm Password</label>
+								<input type="password" id="cpass" name="cpass">
+							</div>
+						</div>
+						<div class="row">
+							<div class="submit-btn">
+								<button type="submit">Get Started</button>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<p>By signing up, you agree to out <a href="#">Terms of Agreement</a></p>
+							</div>
+							<div>
+								<a href="#">Already have an account?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-close-btn">
+				<img src="assets/img/simple-remove@3x.png" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="modal" id="scheduleModal">
+		<div class="modal-inner">
+		<div class="modal-window">
+			<div class="modal-window-leftimg left">
+			</div>
+			<div class="modal-window-content right">
+				<div class="modal-window-header">
+					<h2>Schedule a Demo</h2>
+				</div>
+				<div class="modal-window-text">
+					<p>Glorri takes you to recruiting heaven.</p>
+				</div>
+				<div class="modal-window-form">
+					<form>
+						<div class="row clearfix">
+							<div class="form-group left">
+								<label for="name">First name</label>
+								<input type="text" id="name" name="name">
+							</div>
+							<div class="form-group right">
+								<label for="surname">Last name</label>
+								<input type="text" id="surname" name="surname">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="company">Company</label>
+								<input type="company" id="company" name="company">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<label for="email">Work email</label>
+								<input type="email" id="email" name="email">
+							</div>
+						</div>
+						<div class="row clearfix">
+							<div class="form-group left">
+								<label for="job">Job Title</label>
+								<input type="text" id="job" name="job">
+							</div>
+							<div class="form-group right">
+								<label for="phone">Phone Number</label>
+								<input type="text" id="phone" name="phone">
+							</div>
+						</div>
+						<div class="row">
+							<div class="submit-btn">
+								<button type="submit">Schedule Now</button>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<p>By signing up, you agree to out <a href="#">Terms of Agreement</a></p>
+							</div>
+							<div>
+								<a href="#">Already have an account?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-close-btn">
+				<img src="assets/img/simple-remove@3x.png" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="modal-backdrop"></div>
 	
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/main.js"></script>

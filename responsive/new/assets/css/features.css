@@ -2,19 +2,23 @@ header{
 	width: 100%;
 	background-image: none;
 	background-color: #0061fc;
-/*
-	background-color: #036bf5;
-	background-image: url(../img/untitled-4@3x.png);
+	background-image: url(../img/bkg.svg);
 	background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100.25%;
   background-position-y: 0;
-*/
+	background-position-x: -10px;
 }
 
 .header-img{
-	  position: absolute;
-    background-color: #035fda;
-    height: 100%;
+	     position: absolute;
+    bottom: -85px;
+}
+
+.header-form{
+	position: absolute;
+    left: -8px;
+    width: 100.25%;
+    bottom: -54%;	
 }
 
 .header-content-text{
@@ -470,9 +474,19 @@ a.show-leftnav{
 	}
 }
 */
+
+@media only screen and (max-width: 1440px) {
+	header{
+		background-position-y: 80px;
+	}
+}
+
 @media only screen and (max-width: 1240px) {
 	.header-content-text{
 		    width: 32%;
+	}
+	.header-img{
+		bottom: -70px;
 	}
 }
 

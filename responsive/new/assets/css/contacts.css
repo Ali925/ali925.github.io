@@ -1,10 +1,11 @@
 .cmain-content-image{
 	width: 33.5%;
-	padding-left: 7%;
+/*	padding-left: 7%;*/
 }
 
 .cmain-content-image > img{
-	width: 86%;
+/*	width: 86%;*/
+	width: 100%;
 }
 
 .cmain-content-form{

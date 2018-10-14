@@ -89,4 +89,18 @@ $(document).ready(function(){
 			$(this).parent().addClass("active");
 	});
 	
+	$(".modal-close-btn").click(function(){
+		$(".modal").fadeOut({duration: 400, easing: "swing"});
+		$(".modal-backdrop").hide();
+		$("body").removeClass("modal-open");
+		$("html").removeClass("modal-open");
+	});
+	
 });
+
+function showModal(id){
+	$("body").addClass("modal-open");
+	$("html").addClass("modal-open");
+	$(".modal-backdrop").show();
+	$("#" + id).fadeIn({duration: 400, easing: "swing"});
+}
