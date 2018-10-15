@@ -109,6 +109,18 @@ $(document).ready(function(){
 		$(".select-items").hide();
 	});
 	
+	$(".input-effect input").focusout(function(){
+			if($(this).val() != ""){
+				$(this).addClass("has-content");
+			}else{
+				$(this).removeClass("has-content");
+			}
+		});
+	
+	$(".input-effect label").click(function(){
+		$(this).prev().focus();
+	});
+	
 });
 
 function showModal(id){

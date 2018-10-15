@@ -1,12 +1,12 @@
 header{
 	width: 100%;
 	background-image: none;
-	background-color: #0061fc;
-	background-image: url(../img/bkg.svg);
+	background-color: #035fda;
+	background-image: url(../img/untitled-4@3x.png);
 	background-repeat: no-repeat;
-  background-size: 100.25%;
+  background-size: 125%;
   background-position-y: 0;
-	background-position-x: -10px;
+  background-position-x: 52%;
 }
 
 .header-img{
@@ -475,9 +475,21 @@ a.show-leftnav{
 }
 */
 
+@media only screen and (max-width: 1650px) {
+	header{
+		    background-size: 150%!important;
+	}
+}
+
 @media only screen and (max-width: 1440px) {
 	header{
-		background-position-y: 80px;
+		background-size: 170%!important;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	header{
+		background-size: 185%!important;
 	}
 }
 
