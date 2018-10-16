@@ -121,6 +121,11 @@ $(document).ready(function(){
 		$(this).prev().focus();
 	});
 	
+	$(".main-table-head-btns > a").click(function(){
+		$(".main-table-head-btns > a").removeClass("active");
+		$(this).addClass("active");
+	});
+	
 });
 
 function showModal(id){
