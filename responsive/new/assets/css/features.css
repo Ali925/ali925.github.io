@@ -565,6 +565,15 @@ a.show-leftnav{
 	}
 }
 
+@media only screen and (min-width: 600px) {
+	.fmain-content{
+		display: block!important;
+	}
+	.fmain-nav{
+		display: block!important;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	main{
 		text-align: center;
