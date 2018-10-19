@@ -566,9 +566,9 @@ a.show-leftnav{
 }
 
 @media only screen and (min-width: 600px) {
-	.fmain-content{
+/* 	.fmain-content{
 		display: block!important;
-	}
+	} */
 	.fmain-nav{
 		display: block!important;
 	}
