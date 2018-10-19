@@ -1,0 +1,181 @@
+header{
+	background-image: none;
+	background-color: #0061fc;
+}
+
+.header-content{
+	padding-right: 5%;
+    margin-bottom: 0;
+}
+
+.header-content-image{
+	    width: 45%;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    margin-right: 5%;
+}
+
+.header-content-text{
+	width: 49%;
+}
+
+.header-content-text > p{
+	max-width: 77%;
+}
+
+.main-content {
+    padding-top: 3.5%;
+}
+
+.fmain-content{
+	display: block!important;
+  width: 100%;
+   margin-left: 0; 
+   margin-right: 0;
+	margin-top: 3%;
+}
+
+.fmain-content > .row:nth-child(2){
+	text-align: center;
+	margin-top: 4%;
+}
+
+.fmain-content-imagel{
+	    width: 54%;
+	padding-top: 5.5%;
+}
+
+.fmain-content-feature{
+	    width: 47%;
+}
+
+.fmain-content-feature.left{
+	margin-left: 3%;
+}
+
+.fmain-content-feature.right{
+	margin-right: 3%;
+}
+
+.fmain-content-imagel + .fmain-content-feature {
+	    width: 46%;
+	margin: 0;
+}
+
+.fmain-content-feature > ul > li > p{
+	width: 77%;
+	margin-top: 2.25%;
+}
+
+.fmain-top{
+	text-align: center;
+}
+
+.fmain-top > h2{
+  font-size: 2.1875rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.02343rem;
+  color: #000000;
+}
+
+.fmain-content-features{
+	text-align: center;
+}
+
+.fmain-content-feature > .feature-icon, .fmain-content-feature > h5, .fmain-content-feature > p{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fmain-content-feature > h5{
+	width: 49%;
+}
+
+.fmain-content-feature > p{
+	width: 72%;
+}
+
+.footer-demo-box > h2{
+	width: 47.0625rem;
+}
+
+.footer-demo-box > h2 > span{
+	display: block;
+}
+
+.fmain-content + .right-circle{
+	  right: -45%;
+    top: 82%;
+}
+
+.footer-main-left-text{
+	z-index: 3;
+}
+
+.footer-main-right{
+	z-index: 3;
+}
+
+@media only screen and (min-width: 1280px){
+	.left-circle {
+		 left: -24%;
+	}
+}
+
+@media only screen and (max-width: 1165px){
+	.header-content-text {
+		width: 50%;
+	}
+	.header-content-image{
+		  width: 49%;
+    	top: 14%;	
+	}
+}
+
+@media only screen and (max-width: 1110px){
+	.header-content-text{
+		width: 47%;
+	}
+	.header-content-text > p{
+		max-width: 88%;
+	}
+	.header-content-image{
+		top: 22%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.fmain-top > h2{
+		    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	
+	.fmain-content-imagel{
+		width: 100%;
+		float: none;
+	}
+	
+	.fmain-content-imagel + .fmain-content-feature{
+		width: 94%;
+		margin-left: 6%;
+		text-align: left;
+		float: none;
+	}
+	
+	.fmain-content-features{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.fmain-content-feature{
+		float: none;
+    width: 100%;
+		margin-left: 0;
+    text-align: center;
+	}
+}
