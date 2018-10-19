@@ -85,7 +85,7 @@ header{
 }
 
 .fmain-nav li:not(.active) > span{
-	color: white;
+	color: transparent;
 }
 
 .fmain-nav li.active::before{
