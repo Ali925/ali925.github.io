@@ -65,7 +65,9 @@ $(document).ready(function(){
 			if($(window).width() > 600){
 				$("#fetBl"+id).show();
 			}
-			$(".show-leftnav").click();
+			if($(window).width() <= 600){
+				$(".show-leftnav").click();
+			}
 	});
 	
 	$(".faq-box").click(function(){
