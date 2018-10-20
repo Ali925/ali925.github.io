@@ -1198,7 +1198,49 @@ a, a:hover, a:focus {
         bottom: 20px;
 }
 
+.video_play > .overlay{
+	background: rgba(3,107,245, 0.5);
+}
+
+.content_left_content > h1 > span{
+	display: block;
+}
+
 /***********/
+
+@media all and (min-width: 992px) {
+	.content_left_content{
+		max-width: 40vw;
+	}
+}
+
+
+@media all and (max-width: 1638px) and (min-width: 1348px) {
+	.content_left_content > .font_bold.big{
+		font-size: 56px;
+	}
+	.content_left_content > h2{
+		font-size: 24px;
+	}
+}
+
+@media all and (max-width: 1348px) and (min-width: 1108px) {
+	.content_left_content > .font_bold.big{
+		font-size: 46px;
+	}
+	.content_left_content > h2{
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 1108px) and (min-width: 992px) {
+	.content_left_content > .font_bold.big{
+		font-size: 40px;
+	}
+	.content_left_content > h2{
+		font-size: 18px;
+	}
+}
 
 @media all and (max-width: 1024px) {
   .owl-carousel-t .owl-nav {

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
@@ -78,7 +79,7 @@
                 <div class="d_table">
                     <div class="d_table_v">
                         <div class="content_left_content">
-                            <h1 class="font_bold big color_red text_shadow">All-in-one candidate sourcing platform</h1>
+                            <h1 class="font_bold big color_red text_shadow">All-in-one candidate <span>sourcing platform</span></h1>
                             <div class="space_10"></div>
                             <h2 class="font_semibold color_black xs_white">We are working hard to bring you new experience:</h2>
                             <div class="countdown">
@@ -97,13 +98,13 @@
             </div>
             <div class="content_right">
                 <div class="video_play">
-                    <img src="img/img.jpg" class="img-responsive" alt="">
+                    <img src="glorri.png" class="img-responsive" alt="">
                     <div class="overlay"></div>
                     <span class="play_btn hidden-xs hidden-sm"></span>
                 </div>
             </div>
         </div>
-        <div id="sheduleBtn" class="btn btn_subscribe_on btn_schedule_demo background_red2"><i class="fa fa-paper-plane-o fa-3x"></i>Schedule</div>
+        <div id="sheduleBtn" class="btn btn_subscribe_on btn_schedule_demo background_red2" onclick="showModal('scheduleModal');"><i class="fa fa-calendar-plus-o fa-3x"></i>Schedule</div>
         <div class="btn btn_subscribe_on background_red2"><i class="fa fa-paper-plane-o fa-3x"></i>SUBSCRIBE</div>
         <div class="subscribe_on">
             <div class="subscribe">
@@ -128,18 +129,97 @@
 
     <div class="video_popup hidden-xs hidden-sm">
         <div class="bg-video">
-            <video id="video" src="https://r2---sn-4g5edne6.googlevideo.com/videoplayback?ipbits=0&ratebypass=yes&txp=2211222&key=cms1&c=WEB&clen=3962445&itag=18&pl=21&source=youtube&requiressl=yes&ip=80.243.13.158&mime=video%2Fmp4&expire=1539996263&id=o-AGdXYAVUFv-Uotv1QMZxyxV6qm_uN11sNEyvmO51e-ov&lmt=1539961518081742&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&gir=yes&ei=BybKW-2iD9fF7ATD1Z4I&fvip=2&dur=81.618&signature=56C981217B64B5E86641FAE178C3398C0C998DDB.0D2327382377775C8132CE282C2DA8B65DDC0D68&video_id=AmggC-QPrwg&title=Our+Website%27s+Got+You+Covered%21&rm=sn-pivhx-n8vz7l,sn-n8vyl7k&fexp=23763603&req_id=55a2590d6a7ca3ee&ipbypass=yes&mip=5.197.142.120&redirect_counter=3&cm2rm=sn-nv4sr7l&cms_redirect=yes&mm=34&mn=sn-4g5edne6&ms=ltu&mt=1539974591&mv=m" autoplay></video>
+            <video id="video" src="Glorri.mp4" autoplay></video>
         </div>
         <div class="vodeo_popup_close text-center background_red2 color_white">
             <i class="fa fa-close fa-3x"></i>
             CLOSE
         </div>
     </div>
+    
+    <div class="modal" id="scheduleModal">
+		<div class="modal-inner">
+		<div class="modal-window">
+			<div class="modal-window-leftimg left-box">
+			</div>
+			<div class="modal-window-content right-box">
+				<div class="modal-window-header">
+					<h2>Schedule a Demo</h2>
+				</div>
+				<div class="modal-window-text">
+					<p>Glorri takes you to recruiting heaven.</p>
+				</div>
+				<div class="modal-window-form">
+					<form>
+						<div class="row clearfix">
+							<div class="form-group input-effect left-box">
+								
+								<input class="effect-16" type="text" id="name" name="name" placeholder="First name">
+								<span class="focus-border"></span>
+							</div>
+							<div class="form-group input-effect right-box">
+								
+								<input class="effect-16" type="text" id="surname" name="surname" placeholder="Last name">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group input-effect">
+								
+								<input class="effect-16" type="company" id="company" name="company" placeholder="Company">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group input-effect">
+								
+								<input class="effect-16" type="email" id="email" name="email" placeholder="Work email">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="row clearfix">
+							<div class="form-group input-effect left-box">
+								
+								<input class="effect-16" type="text" id="job" name="job" placeholder="Job Title">
+								<span class="focus-border"></span>
+							</div>
+							<div class="form-group input-effect right-box">
+								
+								<input class="effect-16" type="text" id="phone" name="phone" placeholder="Phone Number">
+								<span class="focus-border"></span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="submit-btn">
+								<button type="submit">Schedule Now</button>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<p>By signing up, you agree to out <a href="#">Terms of Agreement</a></p>
+							</div>
+							<div>
+								<a href="#">Already have an account?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="modal-close-btn">
+				<img src="assets/img/simple-remove@3x.png" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="modal-backdrop"></div>
 
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
