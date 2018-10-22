@@ -1159,8 +1159,8 @@ a, a:hover, a:focus {
 /*************************/
 /***Custom***/
 
-.content_left_content > .font_bold.big{
-        font-size: 68px;
+.content_left_content .font_bold.big{
+        font-size: 72px;
     color: #036bf5;
 }
 
@@ -1186,8 +1186,10 @@ a, a:hover, a:focus {
 }
 
 .menu{
-    top: 50px;
+    top: 30%;
     border: none;
+    height: auto;
+    width: 100%;
 }
 
 .menu .menu-icon{
@@ -1202,8 +1204,304 @@ a, a:hover, a:focus {
 	background: rgba(3,107,245, 0.5);
 }
 
-.content_left_content > h1 > span{
+.content_left_content h1 > span{
 	display: block;
+}
+
+.wrapper > .content > .content-left{
+    width: 54%;
+}
+
+.wrapper > .content > .content-right{
+    width: 46%;
+}
+
+.wrapper > .left{
+    width: 70px;
+}
+
+.wrapper > .left + .content{
+    left: 70px;
+    width: 100%;
+}
+
+.menu > div{
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.menu > div:hover > span{
+    display: inline-block;
+}
+
+.menu > div > span{
+    display: none;
+    background-color: #036bf5;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    left: 40px;
+    font-size: 13px;
+    z-index: 1000;
+}
+
+.menu > div > span:after, .menu > div > span:before{
+    top: 50%;
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.menu > div > span:after{
+        border-color: rgba(102, 102, 102, 0);
+    border-right-color: #036bf5;
+    border-width: 6px;
+    margin-top: -6px;
+}
+
+.menu > div > span:before{
+        border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 5px;
+    margin-top: -5px;
+}
+
+.menu > div:last-child{
+    margin-bottom: 0;
+}
+
+.home-icon{
+    background-image: url(../assets/icons/home-simple.svg);
+}
+
+.home-icon:hover{
+    background-image: url(../assets/icons/blue/home-simple-2.svg);
+}
+
+.about-icon{
+    background-image: url(../assets/icons/alert-i-2.svg);
+}
+
+.about-icon:hover{
+    background-image: url(../assets/icons/blue/alert-i-3.svg);
+}
+
+.recruiters-icon{
+    background-image: url(../assets/icons/network.svg);
+}
+
+.recruiters-icon > span{
+    width: 93px;
+}
+
+.talent-icon > span{
+    width: 76px;
+}
+
+.recruiters-icon:hover{
+    background-image: url(../assets/icons/blue/network-3.svg);
+}
+
+.talent-icon{
+    background-image: url(../assets/icons/multiple-11.svg);
+}
+
+.talent-icon:hover{
+    background-image: url(../assets/icons/blue/multiple-11.svg);
+}
+
+.pricing-icon{
+    background-image: url(../assets/icons/money-bag-3.svg);
+}
+
+.pricing-icon:hover{
+    background-image: url(../assets/icons/blue/money-bag-3.svg);
+}
+
+.contact-icon{
+    background-image: url(../assets/icons/send-5.svg);
+}
+
+.contact-icon:hover{
+    background-image: url(../assets/icons/blue/send-5.svg);
+}
+
+.az-icon{
+    background-image: url(../assets/icons/azflag.svg);
+}
+
+.ru-icon{
+    background-image: url(../assets/icons/ruflag.svg);
+}
+
+.en-icon{
+    background-image: url(../assets/icons/enflag.svg);
+}
+
+.langs-list{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+.langs-list > div.selected-lang, .langs-list > div.select-lang > div{
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.select-lang{
+    display: none;
+    width: 60%;
+    margin-left: 20%;
+    border: solid 1px rgba(0,0,0,.1);
+    padding-top: 8px;
+    top: -110px;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.select-lang:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.select-lang:after, .select-lang:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.select-lang:before {
+    border-color: rgba(102, 102, 102, 0);
+    border-top-color: rgba(0,0,0,.15);
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.select-lang:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 5px;
+    margin-left: -5px;
+}
+
+.contact_info{
+    bottom: 15px;
+}
+
+.contact_info li{
+    display: inline-block;
+}
+
+.contact_info li:last-child{
+    margin-left: 10px;
+}
+
+.change-content-btns{
+    position: absolute;
+    right: -102px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.change-content-btn{
+        background-color: #036bf5;
+    color: white;
+        padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 4px;
+    width: 104%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 18px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.change-content-btns.talents > .change-content-btn{
+    width: 100%;
+}
+
+.change-content-btn > a{
+    outline: 0;
+}
+
+.change-content-btn:hover{
+    opacity: 1;
+}    
+
+.play_btn_2{
+        width: 80px!important;
+    height: 80px!important;
+    top: calc(50vh - 40px)!important;
+    left: calc(50% - 40px)!important;
+    background-image: url(../assets/img/button-circle-play.svg)!important;
+}
+
+.d_table_v#talentsContent{
+    display: none;
+}
+
+.change-content-btns.talents{
+    right: -91px;
+}
+
+.brand > span{
+        font-size: 13px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 1.5px;
+    color: #036bf5;
+}
+
+.main-content-line{
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    background-color: #036bf5;
+    position: absolute;
+    top: 50%;
+}
+
+.d_table_v{
+    vertical-align: top;
+}
+
+.content_left_content > .left-head-content{
+    top: 140px;
+    position: absolute;
+}
+
+.content_left_content > .left-bottom-content{
+    top: calc(50vh + 90px);
+    position: absolute;
+}
+
+.content_left .content_left_content .btn{
+    float: none;
+    margin-top: 50px;
+    background-color: #036bf5;
 }
 
 /***********/

@@ -32,12 +32,14 @@
         <div class="left text-center">
             <div class="brand">
                 <img src="assets/img/glorri-logo_22@3x.png">
+                <span>beta</span>
             </div>
 <!--
             <div class="title_page">
                 <a href="01.html">Applicant Tracking & Live Talent Solutions</a>
             </div>
 -->
+<!--
             <div class="social_list">
                 <ul>
                     <li>
@@ -48,9 +50,36 @@
                     </li>
                 </ul>
             </div>
-            <div class="menu">
-                <div class="menu-icon black"><span></span></div>
+-->
+            <div class="langs-list">
+                <div class="selected-lang en-icon"></div>
+                <div class="select-lang">
+                    <div class="az-icon"></div>
+                    <div class="en-icon"></div>
+                    <div class="ru-icon"></div>
+                </div>
             </div>
+            <div class="menu">
+                <div class="home-icon" onclick="window.location.href = 'homepage.html';">
+                    <span>Home</span>
+                </div>
+                <div class="about-icon" onclick="window.location.href = 'about_2.html';">
+                    <span>About</span>
+                </div>
+                <div class="recruiters-icon" onclick="window.location.href = 'features_2.html';">
+                    <span>For recruiters</span>
+                </div>
+                <div class="talent-icon" onclick="window.location.href = 'featurest_2.html';">
+                    <span>For talents</span>
+                </div>
+                <div class="pricing-icon" onclick="window.location.href = 'pricing_2.html';">
+                    <span>Pricing</span>
+                </div>
+                <div class="contact-icon" onclick="window.location.href = 'contacts_2.html';">
+                    <span>Contact</span>
+                </div>
+            </div>
+<!--
             <div class="menu_opened">
                 <ul>
                     <li>
@@ -73,24 +102,77 @@
                     </li>
                 </ul>
             </div>
+-->
+<!--
+            <div class="change-content-btns talents">
+                <div class="change-content-btn">
+                    <a href="#">For talents</a>
+                </div>
+            </div>
+-->
         </div>
         <div class="content">
             <div class="content_left">
+               <div class="main-content-line"></div>
                 <div class="d_table">
-                    <div class="d_table_v">
+                    <div class="d_table_v" id="recruitersContent">
                         <div class="content_left_content">
-                            <h1 class="font_bold big color_red text_shadow">All-in-one candidate <span>sourcing platform</span></h1>
+                           <div class="left-head-content">
+                               <h1 class="font_bold big color_red text_shadow">All-in-one candidate <span>sourcing platform</span></h1>
+                               <button class="btn">Schedule a demo</button>
+                           </div>
+                            <div class="left-bottom-content">
+                               <h1 class="font_bold big color_red text_shadow">All-in-one candidate <span>sourcing platform</span></h1>
+                               <button class="btn">Subscribe</button>
+                           </div>
+                            
+<!--
                             <div class="space_10"></div>
+                            
                             <h2 class="font_semibold color_black xs_white">We are working hard to bring you new experience:</h2>
                             <div class="countdown">
                                 <ul class="color_black xs_white" id="countdown"></ul>
                             </div>
+-->
                         </div>
                         <div class="contact_info">
+<!--
                             <ul class="list-inline">
                                 <li><a href="mailto:example@domain.com" class="font_semibold">example@domain.com</a></li>
                                 <li>|</li>
                                 <li><a href="tel:+00123456789" class="font_semibold">+00 123 45 67 89</a></li>
+                            </ul>
+-->
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d_table_v" id="talentsContent">
+                        <div class="content_left_content">
+                            <h1 class="font_bold big color_red text_shadow">Coming soon!</h1>
+                            <div class="space_10"></div>
+                        </div>
+                        <div class="contact_info">
+<!--
+                            <ul class="list-inline">
+                                <li><a href="mailto:example@domain.com" class="font_semibold">example@domain.com</a></li>
+                                <li>|</li>
+                                <li><a href="tel:+00123456789" class="font_semibold">+00 123 45 67 89</a></li>
+                            </ul>
+-->
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -98,14 +180,16 @@
             </div>
             <div class="content_right">
                 <div class="video_play">
-                    <img src="glorri.png" class="img-responsive" alt="">
+                    <img src="assets/img/glorri_bg.jpg" class="img-responsive" alt="">
                     <div class="overlay"></div>
-                    <span class="play_btn hidden-xs hidden-sm"></span>
+                    <span class="play_btn play_btn_2 hidden-xs hidden-sm"></span>
                 </div>
             </div>
         </div>
+<!--
         <div id="sheduleBtn" class="btn btn_subscribe_on btn_schedule_demo background_red2" onclick="showModal('scheduleModal');"><i class="fa fa-calendar-plus-o fa-3x"></i>Schedule</div>
         <div class="btn btn_subscribe_on background_red2"><i class="fa fa-paper-plane-o fa-3x"></i>SUBSCRIBE</div>
+-->
         <div class="subscribe_on">
             <div class="subscribe">
                 <form class="subscribe_form" action="subscribe.php" method="POST">

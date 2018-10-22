@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    var showLangs = false, currentHomeContent = "recruiters";
 	var length = $(".main-about-staff").length, first = 1, last = 2, currentFeatureBlock = 1;
 	$(".main-about-staff-left").click(function(){
 		if(first > 1){
@@ -130,6 +131,50 @@ $(document).ready(function(){
 		$(".main-table-head-btns > a").removeClass("active");
 		$(this).addClass("active");
 	});
+    
+    $(".selected-lang").mouseenter(function(){
+        $(".select-lang").show();
+    });
+    
+    $(".select-lang").mouseenter(function(){
+        showLangs = true;
+    });
+    
+     $(".select-lang").mouseleave(function(){
+         showLangs = false;
+        $(".select-lang").hide();
+    });
+    
+    $(".selected-lang").mouseleave(function(){
+        setTimeout(function(){
+            if(!showLangs)
+                $(".select-lang").hide();
+        }, 500);
+    });
+    
+    $(".select-lang > div").click(function(){
+        var className = $(this).attr("class");
+        console.log(className)
+        $(".selected-lang").attr("class", "selected-lang");
+        $(".selected-lang").addClass(className);
+        $(".select-lang").hide();
+    });
+    
+    $(".change-content-btn").click(function(){
+        if(currentHomeContent == "recruiters"){
+            $(this).find("a").text("For recruiters");
+            $("#recruitersContent").hide();
+            $("#talentsContent").css("display", "table-cell");
+            currentHomeContent = "talents";
+            $(".change-content-btns").removeClass("talents");
+        } else {
+             $(this).find("a").text("For talents");
+            $("#talentsContent").hide();
+            $("#recruitersContent").show();
+            currentHomeContent = "recruiters";
+            $(".change-content-btns").addClass("talents");
+        }
+    });
 	
 });
 
