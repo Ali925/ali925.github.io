@@ -86,19 +86,26 @@ $(document).ready(function () {
     
     $('.content_left').scroll(function(event) {
           console.log('scrolling', event);
+        event.preventDefault();
+        event.stopPropagation();
         if(!scrolling){
-            //scrolling = true;
-            if(activeScreen == "companies" && event.currentTarget.scrollTop >= (event.currentTarget.scrollHeight*0.12)){
+            scrolling = true;
+            if(activeScreen == "companies"){
                 activeScreen = "talents";
                 $("#recruitersContent").addClass("not_active");
                 $("#talentsContent").removeClass("not_active");
-                $('.content_left').scrollTop((event.currentTarget.scrollHeight*0.36));
-            } else if(activeScreen == "talents" && (event.currentTarget.scrollTop >= (event.currentTarget.scrollHeight*0.5) || event.currentTarget.scrollTop <= (event.currentTarget.scrollHeight*0.275))) {  
+                $('.content_left').scrollTop((event.currentTarget.scrollHeight*0.35));
+                setTimeout(function(){scrolling = false;},100);
+                
+            } else if(activeScreen == "talents") {  
                 activeScreen = "companies";
                 $("#recruitersContent").removeClass("not_active");
                 $("#talentsContent").addClass("not_active");
                 $('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;},100);
             }
+        } else {
+            return false;
         }
       });
 
