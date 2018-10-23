@@ -1512,6 +1512,7 @@ a, a:hover, a:focus {
 }
 */
 
+/*
 .left .title_page > a > span {
     display: inline-block;
     width: 22px!important;
@@ -1530,6 +1531,7 @@ a, a:hover, a:focus {
     color: white;
     font-weight: bold;
 }
+*/
 
 .content > .content_left{
     width: 54%;
@@ -1567,7 +1569,7 @@ a, a:hover, a:focus {
 }
 
 #talentsContent > .contact_info {
-    bottom: -240px;
+    bottom: -230px;
     width: 100%;
     position: relative;
 }
@@ -1595,6 +1597,10 @@ a, a:hover, a:focus {
 
 .menu_opened{
     transition: left .5s;
+}
+
+#talentsContent .content_left_content .font_bold.big{
+    font-size: 58px;
 }
 
 /***********/

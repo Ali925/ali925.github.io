@@ -150,15 +150,19 @@ $(document).ready(function () {
 });
 
 function goToR(){
+                scrolling = true;
                 activeScreen = "companies";
                 $("#recruitersContent").removeClass("not_active");
                 $("#talentsContent").addClass("not_active");
                 $('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;},50);
 }
 
 function goToT(){
+                scrolling = true;
                 activeScreen = "talents";
                 $("#recruitersContent").addClass("not_active");
                 $("#talentsContent").removeClass("not_active");
                 $('.content_left').scrollTop((document.getElementsByClassName("content_left")[0].scrollHeight*0.36));
+    setTimeout(function(){scrolling = false;},50);
 }
