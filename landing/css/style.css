@@ -1161,7 +1161,7 @@ a, a:hover, a:focus {
 /***Custom***/
 
 .content_left_content .font_bold.big{
-        font-size: 72px;
+        font-size: 55px;
     color: #036bf5;
 }
 
@@ -1544,11 +1544,15 @@ a, a:hover, a:focus {
 }
 
 .left-bottom-btns{
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.left-bottom-content{
+    margin-top: 3vh;
 }
 
 .left-bottom-btns > button:first-child{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .d_table_v#talentsContent{
@@ -1603,17 +1607,13 @@ a, a:hover, a:focus {
     transition: left .5s;
 }
 
-#talentsContent .content_left_content .font_bold.big{
-    font-size: 58px;
-}
-
 .video_play{
         transform: skew(0deg);
     width: 100%;
 }
 
 .content_left .content_left_content{
-    width: 100%;
+    width: 85%;
 }
 
 /***********/
