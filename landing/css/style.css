@@ -1617,40 +1617,78 @@ a, a:hover, a:focus {
     width: 85%;
 }
 
+.left .brand_tablet{
+    display: none;
+}
+
+.contact_info > .right-box:nth-child(2){
+    display: none;
+}
+
 /***********/
 
+/*
 @media all and (min-width: 992px) {
 	.content_left_content{
 		max-width: 40vw;
 	}
 }
+*/
 
 
-@media all and (max-width: 1638px) and (min-width: 1348px) {
-	.content_left_content > .font_bold.big{
-		font-size: 56px;
-	}
-	.content_left_content > h2{
-		font-size: 24px;
+@media all and (max-width: 1648px) and (min-width: 1564px) {
+	.content_left_content .font_bold.big{
+		font-size: 52px;
 	}
 }
 
-@media all and (max-width: 1348px) and (min-width: 1108px) {
-	.content_left_content > .font_bold.big{
-		font-size: 46px;
-	}
-	.content_left_content > h2{
-		font-size: 20px;
+@media all and (max-width: 1564px) and (min-width: 1450px) {
+	.content_left_content .font_bold.big{
+		font-size: 48px;
 	}
 }
 
-@media all and (max-width: 1108px) and (min-width: 992px) {
-	.content_left_content > .font_bold.big{
-		font-size: 40px;
+@media all and (max-width: 1450px) and (min-width: 1280px) {
+	.content_left_content .font_bold.big{
+		font-size: 42px;
 	}
-	.content_left_content > h2{
-		font-size: 18px;
+}
+
+@media all and (max-width: 1280px) and (min-width: 1110px) {
+	.content_left_content .font_bold.big{
+		font-size: 36px;
 	}
+}
+
+@media all and (max-width: 1280px) and (min-width: 1110px) {
+	.content_left_content .font_bold.big{
+		font-size: 36px;
+	}
+}
+
+@media all and (max-width: 1110px) and (min-width: 970px) {
+	.content_left_content .font_bold.big{
+		font-size: 31px;
+	}
+}
+
+@media all and (max-width: 970px) and (min-width: 768px) {
+	.content_left_content .font_bold.big{
+		font-size: 23px;
+	}
+    .left-bottom-content > p{
+        font-size: 14px;
+    }
+    .slider-btns > a{
+        font-size: 13px;
+    }
+    .right-box > ul > li > a > i{
+        font-size: 13px;
+    }
+    .left-bottom-btns > button{
+        font-size: 10px;
+        padding: 0 20px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -1662,6 +1700,7 @@ a, a:hover, a:focus {
 
   .contact .col-xs-12.col-md-4 {
     width: 100%; } }
+/*
 @media all and (max-width: 991px) {
   .services .service {
     margin-bottom: 10vh; }
@@ -1713,6 +1752,7 @@ a, a:hover, a:focus {
 
   .xs_white {
     color: #fff !important; } }
+*/
 @media all and (max-width: 767px) {
   h1 {
     font-size: 28px; }
@@ -1866,5 +1906,78 @@ a, a:hover, a:focus {
 
   .big3 {
     font-size: 85px; } }
+
+@media all and (max-width: 767px) {
+    .left .brand {
+        display: none;
+    }
+    .left .brand_tablet {
+        display: block;
+        width: 50px;
+        height: 32px;
+        position: relative;
+        top: -5px;
+        margin-top: 16px;
+        max-width: 50px;
+    }
+    .left .menu {
+        left: 15px;
+        right: initial;
+        height: 50px;
+        width: 50px;
+        top: 0px;
+        border-top: none;
+        z-index: 100000;
+    }
+    .menu_opened{
+        top: 50px;
+    }
+    .left > .langs-list{
+        display: none;
+    }
+    .content_left_content .font_bold.big{
+		font-size: 30px;
+	}
+    .left-bottom-content > p{
+        font-size: 13px;
+    }
+    .slider-btns > a{
+        font-size: 13px;
+    }
+    .right-box > ul > li > a > i{
+        font-size: 13px;
+    }
+    .left-bottom-btns > button{
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .d_table_v{
+        padding: 0 5%;
+    }
+    .content_left .content_left_content{
+        width: 95%;
+    }
+    .contact_info > .right-box:last-child{
+        float: none;
+        clear: both;
+        bottom: -8px;
+    }
+    .contact_info > .right-box:nth-child(2){
+        display: block;
+        position: relative;
+        bottom: -52px;
+    }
+    .contact_info > .right-box:nth-child(2) .select-lang{
+        border: none;
+        background-color: transparent;
+    }
+    .contact_info > .right-box:nth-child(2) .select-lang::after, .contact_info > .right-box:nth-child(2) .select-lang::before{
+        content: none;
+    }
+    .video_play{
+        height: calc(100% - 30px);
+        top: 30px;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */
