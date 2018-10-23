@@ -136,7 +136,7 @@ $(document).ready(function(){
         $(".select-lang").show();
     });
     
-    $(".select-lang").mouseenter(function(){
+    $(".select-lang").mouseover(function(){
         showLangs = true;
     });
     

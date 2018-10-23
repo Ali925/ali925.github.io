@@ -1355,7 +1355,7 @@ a, a:hover, a:focus {
 
 .langs-list{
     position: absolute;
-    bottom: 10px;
+    bottom: 60px;
     text-align: center;
     width: 100%;
     z-index: 1000;
@@ -1462,10 +1462,7 @@ a, a:hover, a:focus {
     top: calc(50vh - 40px)!important;
     left: calc(50% - 40px)!important;
     background-image: url(../assets/img/button-circle-play.svg)!important;
-}
-
-.d_table_v#talentsContent{
-    display: none;
+    transform: skew(0deg)!important;
 }
 
 .change-content-btns.talents{
@@ -1533,13 +1530,17 @@ a, a:hover, a:focus {
 }
 */
 
+.content{
+    overflow-y: hidden;
+}
+
 .content > .content_left{
-    width: 54%;
-    overflow-y: scroll;
+    width: 50%;
+    overflow-y: hidden;
 }
 
 .content > .content_right{
-    width: 46%;
+    width: 50%;
 }
 
 .left-bottom-btns{
@@ -1552,18 +1553,19 @@ a, a:hover, a:focus {
 
 .d_table_v#talentsContent{
         display: table-cell;
-    top: 100%;
-    position: absolute;
+    top: 0;
     vertical-align: middle;
     left: 0;
     
 }
 
-.d_table_v.not_active{
+.d_table_v#talentsContent.not_active, .d_table_v#recruitersContent.not_active{
     visibility: hidden;
     opacity: 0;
+    display: none;
 }
 
+/*
 #talentsContent > .contact_info{
     bottom: 120px;
 }
@@ -1573,14 +1575,16 @@ a, a:hover, a:focus {
     width: 100%;
     position: relative;
 }
+*/
 
 .d_table_v{
     transition: opacity 1s linear;
+    padding: 0 8%;
 }
 
 .content_left_content + .contact_info{
-        width: 50vw;
-    max-width: 40vw;
+        width: 100%;
+        padding-right: 17%;
 }
 
 .slider-btns > a {
@@ -1601,6 +1605,15 @@ a, a:hover, a:focus {
 
 #talentsContent .content_left_content .font_bold.big{
     font-size: 58px;
+}
+
+.video_play{
+        transform: skew(0deg);
+    width: 100%;
+}
+
+.content_left .content_left_content{
+    width: 100%;
 }
 
 /***********/

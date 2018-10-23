@@ -84,30 +84,30 @@ $(document).ready(function () {
         'left': ($windowW - $videoW) / 2
     });
     
-    $('.content_left').scroll(function(event) {
-          console.log('scrolling', event);
-        event.preventDefault();
-        event.stopPropagation();
-        if(!scrolling){
-            scrolling = true;
-            if(activeScreen == "companies"){
-                activeScreen = "talents";
-                $("#recruitersContent").addClass("not_active");
-                $("#talentsContent").removeClass("not_active");
-                $('.content_left').scrollTop((event.currentTarget.scrollHeight*0.35));
-                setTimeout(function(){scrolling = false;},100);
-                
-            } else if(activeScreen == "talents") {  
-                activeScreen = "companies";
-                $("#recruitersContent").removeClass("not_active");
-                $("#talentsContent").addClass("not_active");
-                $('.content_left').scrollTop(0);
-                setTimeout(function(){scrolling = false;},100);
-            }
-        } else {
-            return false;
-        }
-      });
+//    $('.content_left').scroll(function(event) {
+//          console.log('scrolling', event);
+//        event.preventDefault();
+//        event.stopPropagation();
+//        if(!scrolling){
+//            scrolling = true;
+//            if(activeScreen == "companies"){
+//                activeScreen = "talents";
+//                $("#recruitersContent").addClass("not_active");
+//                $("#talentsContent").removeClass("not_active");
+//                $('.content_left').scrollTop((event.currentTarget.scrollHeight*0.35));
+//                setTimeout(function(){scrolling = false;},100);
+//                
+//            } else if(activeScreen == "talents") {  
+//                activeScreen = "companies";
+//                $("#recruitersContent").removeClass("not_active");
+//                $("#talentsContent").addClass("not_active");
+//                $('.content_left').scrollTop(0);
+//                setTimeout(function(){scrolling = false;},100);
+//            }
+//        } else {
+//            return false;
+//        }
+//      });
 
 
     // -----------------------------------------------------------------------------------------------------
@@ -152,17 +152,26 @@ $(document).ready(function () {
 function goToR(){
                 scrolling = true;
                 activeScreen = "companies";
-                $("#recruitersContent").removeClass("not_active");
-                $("#talentsContent").addClass("not_active");
-                $('.content_left').scrollTop(0);
-                setTimeout(function(){scrolling = false;},50);
+                $("#talentsContent").hide();
+                $("#recruitersContent").css("display", "table-cell");
+                
+               
+                //$('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;
+                                     
+                                      $("#recruitersContent").removeClass("not_active");
+                $("#talentsContent").addClass("not_active");},50);
 }
 
 function goToT(){
                 scrolling = true;
                 activeScreen = "talents";
-                $("#recruitersContent").addClass("not_active");
-                $("#talentsContent").removeClass("not_active");
-                $('.content_left').scrollTop((document.getElementsByClassName("content_left")[0].scrollHeight*0.36));
-    setTimeout(function(){scrolling = false;},50);
+                $("#recruitersContent").hide();
+                $("#talentsContent").css("display", "table-cell");
+    
+                
+                //$('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;
+                                     $("#recruitersContent").addClass("not_active");
+                $("#talentsContent").removeClass("not_active");},50);
 }
