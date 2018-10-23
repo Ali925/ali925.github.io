@@ -1576,15 +1576,22 @@ a, a:hover, a:focus {
     transition: opacity 1s linear;
 }
 
-/*
-.d_table_v.totop{
-    transform: translateY(-100%);
+.content_left_content + .contact_info{
+        width: 50vw;
+    max-width: 40vw;
 }
 
-.d_table_v.tobottom{
-    transform: translateY(100%);
+.slider-btns > a {
+    text-transform: uppercase;
 }
-*/
+
+.slider-btns > a:first-child{
+    margin-right: 15px;
+}
+
+.slider-btns > a.active{
+    color: #036bf5;
+}
 
 /***********/
 
