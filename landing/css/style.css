@@ -1593,6 +1593,10 @@ a, a:hover, a:focus {
     color: #036bf5;
 }
 
+.menu_opened{
+    transition: left .5s;
+}
+
 /***********/
 
 @media all and (min-width: 992px) {
