@@ -150,6 +150,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   overflow: hidden;
+    overflow-y: scroll;
   color: #0b1440;
   background: #000; }
 
@@ -1186,9 +1187,8 @@ a, a:hover, a:focus {
 }
 
 .menu{
-    top: 30%;
+    top: 50px;
     border: none;
-    height: auto;
     width: 100%;
 }
 
@@ -1216,6 +1216,7 @@ a, a:hover, a:focus {
     width: 46%;
 }
 
+/*
 .wrapper > .left{
     width: 70px;
 }
@@ -1224,6 +1225,7 @@ a, a:hover, a:focus {
     left: 70px;
     width: 100%;
 }
+*/
 
 .menu > div{
     height: 30px;
@@ -1234,10 +1236,13 @@ a, a:hover, a:focus {
     margin-bottom: 30px;
 }
 
+/*
 .menu > div:hover > span{
     display: inline-block;
 }
+*/
 
+/*
 .menu > div > span{
     display: none;
     background-color: #036bf5;
@@ -1274,6 +1279,7 @@ a, a:hover, a:focus {
     border-width: 5px;
     margin-top: -5px;
 }
+*/
 
 .menu > div:last-child{
     margin-bottom: 0;
@@ -1475,6 +1481,7 @@ a, a:hover, a:focus {
     color: #036bf5;
 }
 
+/*
 .main-content-line{
     width: 90%;
     margin-left: 5%;
@@ -1503,6 +1510,81 @@ a, a:hover, a:focus {
     margin-top: 50px;
     background-color: #036bf5;
 }
+*/
+
+.left .title_page > a > span {
+    display: inline-block;
+    width: 22px!important;
+    height: 22px!important;
+    background-color: #036bf5!important;
+    border-radius: 100%!important;
+    margin-right: -20px!important;
+    top: 6px!important;
+}
+
+.left .title_page > a > b{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 12px;
+    right: -5px;
+    color: white;
+    font-weight: bold;
+}
+
+.content > .content_left{
+    width: 54%;
+    overflow-y: scroll;
+}
+
+.content > .content_right{
+    width: 46%;
+}
+
+.left-bottom-btns{
+    margin-top: 50px;
+}
+
+.left-bottom-btns > button:first-child{
+    margin-right: 50px;
+}
+
+.d_table_v#talentsContent{
+        display: table-cell;
+    top: 100%;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    
+}
+
+.d_table_v.not_active{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#talentsContent > .contact_info{
+    bottom: 120px;
+}
+
+#talentsContent > .contact_info {
+    bottom: -260px;
+    width: 100%;
+    position: relative;
+}
+
+.d_table_v{
+    transition: opacity 1s linear;
+}
+
+/*
+.d_table_v.totop{
+    transform: translateY(-100%);
+}
+
+.d_table_v.tobottom{
+    transform: translateY(100%);
+}
+*/
 
 /***********/
 

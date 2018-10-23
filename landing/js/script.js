@@ -1,6 +1,8 @@
 'use strict';
 
 $(document).ready(function () {
+    
+    var activeScreen = "companies", scrolling = false;
 
     setTimeout(function () {
         $('.loader_bg').fadeToggle();
@@ -50,13 +52,13 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.menu').on('mouseenter', function () {
-       $('.menu_opened').addClass('on');
+    $('.menu').on('click', function () {
+       $('.menu_opened').toggleClass('on');
     });
     
-    $('.wrapper > .left.text-center').on('mouseleave', function () {
-       $('.menu_opened').removeClass('on');
-    });
+//    $('.wrapper > .left.text-center').on('mouseleave', function () {
+//       $('.menu_opened').removeClass('on');
+//    });
 
     $('.menu_opened li span').on('click', function () {
        $('.menu_opened').removeClass('on')
@@ -81,43 +83,61 @@ $(document).ready(function () {
         'position': 'relative',
         'left': ($windowW - $videoW) / 2
     });
+    
+    $('.content_left').scroll(function(event) {
+          console.log('scrolling', event);
+        if(!scrolling){
+            //scrolling = true;
+            if(activeScreen == "companies" && event.currentTarget.scrollTop >= (event.currentTarget.scrollHeight*0.12)){
+                activeScreen = "talents";
+                $("#recruitersContent").addClass("not_active");
+                $("#talentsContent").removeClass("not_active");
+                $('.content_left').scrollTop((event.currentTarget.scrollHeight*0.36));
+            } else if(activeScreen == "talents" && (event.currentTarget.scrollTop >= (event.currentTarget.scrollHeight*0.5) || event.currentTarget.scrollTop <= (event.currentTarget.scrollHeight*0.275))) {  
+                activeScreen = "companies";
+                $("#recruitersContent").removeClass("not_active");
+                $("#talentsContent").addClass("not_active");
+                $('.content_left').scrollTop(0);
+            }
+        }
+      });
 
 
     // -----------------------------------------------------------------------------------------------------
     // Animation on scroll
 
-    (function(e) {
-        e.fn.visible = function(t, n, r) {
-            var i = e(this).eq(0),
-                s = i.get(0),
-                o = e(window),
-                u = o.scrollTop(),
-                a = u + o.height(),
-                f = o.scrollLeft(),
-                l = f + o.width(),
-                c = i.offset().top,
-                h = c + i.height(),
-                p = i.offset().left,
-                d = p + i.width(),
-                v = t === true ? h : c,
-                m = t === true ? c : h,
-                g = t === true ? d : p,
-                y = t === true ? p : d,
-                b = n === true ? s.offsetWidth * s.offsetHeight : true,
-                r = r ? r : "both";
-            if (r === "both") return !!b && m <= a && v >= u && y <= l && g >= f;
-            else if (r === "vertical") return !!b && m <= a && v >= u;
-            else if (r === "horizontal") return !!b && y <= l && g >= f
-        }
-    })(jQuery);
-
-    jQuery('.content').scroll(function(event) {
-
-        jQuery(".animate").each(function(i, el) {
-            var el = jQuery(el);
-            if (el.visible(true)) {
-                el.addClass("start");
-            }
-        });
-    });
+//    (function(e) {
+//        e.fn.visible = function(t, n, r) {
+//            var i = e(this).eq(0),
+//                s = i.get(0),
+//                o = e(window),
+//                u = o.scrollTop(),
+//                a = u + o.height(),
+//                f = o.scrollLeft(),
+//                l = f + o.width(),
+//                c = i.offset().top,
+//                h = c + i.height(),
+//                p = i.offset().left,
+//                d = p + i.width(),
+//                v = t === true ? h : c,
+//                m = t === true ? c : h,
+//                g = t === true ? d : p,
+//                y = t === true ? p : d,
+//                b = n === true ? s.offsetWidth * s.offsetHeight : true,
+//                r = r ? r : "both";
+//            if (r === "both") return !!b && m <= a && v >= u && y <= l && g >= f;
+//            else if (r === "vertical") return !!b && m <= a && v >= u;
+//            else if (r === "horizontal") return !!b && y <= l && g >= f
+//        }
+//    })(jQuery);
+//
+//    jQuery('.content').scroll(function(event) {
+//        
+//        jQuery(".animate").each(function(i, el) {
+//            var el = jQuery(el);
+//            if (el.visible(true)) {
+//                el.addClass("start");
+//            }
+//        });
+//    });
 });
