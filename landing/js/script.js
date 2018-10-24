@@ -24,6 +24,10 @@ $(document).ready(function () {
         setTimeout(function(){showSubscribe = false;}, 500);
     });
     
+    $(".schedule_btn").click(function(){
+        goToS();
+    });
+    
     $('.content, .left').on('click', function () {
         if(!showSubscribe){
             if ($('.subscribe_on').hasClass('on')) {
@@ -184,4 +188,45 @@ function goToT(){
                 setTimeout(function(){scrolling = false;
                                      $("#recruitersContent").addClass("not_active");
                 $("#talentsContent").removeClass("not_active");},50);
+}
+
+function goToS(){
+                scrolling = true;
+                $("#recruitersContent").hide();
+                $("#talentsContent").hide();
+                $("#scheduleContent").css("display", "table-cell");
+    
+                
+                //$('.content_left').scrollTop(0);
+                setTimeout(function(){
+                                    scrolling = false;
+                                     $("#recruitersContent").addClass("not_active");
+                                      $("#talentsContent").addClass("not_active");
+                                    $("#scheduleContent").removeClass("not_active");
+                },50);
+}
+
+function returnB(){
+    if(activeScreen == "talents"){
+                scrolling = true;
+                $("#scheduleContent").hide();
+                $("#talentsContent").css("display", "table-cell");
+    
+                
+                //$('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;
+                                     $("#scheduleContent").addClass("not_active");
+                $("#talentsContent").removeClass("not_active");},50);
+    } else {
+                scrolling = true;
+                $("#scheduleContent").hide();
+                $("#recruitersContent").css("display", "table-cell");
+                
+               
+                //$('.content_left').scrollTop(0);
+                setTimeout(function(){scrolling = false;
+                                     
+                                      $("#recruitersContent").removeClass("not_active");
+                $("#scheduleContent").addClass("not_active");},50);
+    }
 }
