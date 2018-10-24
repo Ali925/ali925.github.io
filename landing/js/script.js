@@ -15,6 +15,11 @@ $(document).ready(function () {
         $('.subscribe_on').toggleClass('on');
         $('.content').toggleClass('opacity');
     });
+    
+    $("#subscribeBtn").click(function(){
+        
+    });
+    
     $('.content, .left').on('click', function () {
         $('.btn_subscribe_on').removeClass('close');
         $('.btn_subscribe_on i').removeClass('fa-close fadeIn animated').addClass('fa-paper-plane-o ');
