@@ -1629,6 +1629,14 @@ a, a:hover, a:focus {
     display: none;
 }
 
+.subscribe_form label > .color_red{
+    color: #036bf5;
+}
+
+.subscribe_form button.submit{
+    background: #036bf5!important;
+}
+
 /***********/
 
 /*
@@ -1998,7 +2006,7 @@ a, a:hover, a:focus {
         font-size: 12px;
     }
     .left-bottom-btns > button{
-        font-size: 9px;
+        font-size: 10px;
         padding: 0 12px;
     }
     .left-bottom-btns > button:first-child{
@@ -2006,6 +2014,9 @@ a, a:hover, a:focus {
     }
     .langs-list > div.selected-lang{
         top: 3px;
+    }
+    .subscribe:before{
+        max-width: 100%;
     }
 }
 
@@ -2034,7 +2045,9 @@ a, a:hover, a:focus {
         text-decoration: underline!important;
     }
     .left-bottom-btns > button{
-        line-height: 30px;    
+        line-height: 40px;    
+        font-size: 10px;
+        padding: 0 20px;
     }
     .video_play .play_btn{
         display: none;

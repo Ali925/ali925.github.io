@@ -1,6 +1,6 @@
 'use strict';
 
-var activeScreen = "companies", scrolling = false;
+var activeScreen = "companies", scrolling = false, showSubscribe = false;
 
 $(document).ready(function () {
 
@@ -8,25 +8,29 @@ $(document).ready(function () {
         $('.loader_bg').fadeToggle();
     }, 1500);
 
-    $('.btn_subscribe_on:not(.btn_schedule_demo)').on('click', function () {
-        console.log("test");
-        $('.btn_subscribe_on').toggleClass('close');
-        $('.btn_subscribe_on i').toggleClass('fa-paper-plane-o fa-close fadeIn animated');
-        $('.subscribe_on').toggleClass('on');
-        $('.content').toggleClass('opacity');
-    });
+//    $('.btn_subscribe_on:not(.btn_schedule_demo)').on('click', function () {
+//        console.log("test");
+//        $('.btn_subscribe_on').toggleClass('close');
+//        $('.btn_subscribe_on i').toggleClass('fa-paper-plane-o fa-close fadeIn animated');
+//        $('.subscribe_on').toggleClass('on');
+//        $('.content').toggleClass('opacity');
+//    });
     
     $(".subscribe_btn").click(function(){
         console.log("test");
+        showSubscribe = true;
+        $('.subscribe_on').toggleClass('on');
+        $('.content').toggleClass('opacity');
+        setTimeout(function(){showSubscribe = false;}, 500);
     });
     
     $('.content, .left').on('click', function () {
-        $('.btn_subscribe_on').removeClass('close');
-        $('.btn_subscribe_on i').removeClass('fa-close fadeIn animated').addClass('fa-paper-plane-o ');
-        if ($('.subscribe_on').hasClass('on')) {
-            $('.content').toggleClass('opacity');
+        if(!showSubscribe){
+            if ($('.subscribe_on').hasClass('on')) {
+                $('.content').toggleClass('opacity');
+            }
+            $('.subscribe_on').removeClass('on');
         }
-        $('.subscribe_on').removeClass('on');
     });
     $('.content, .subscribe_on').on('click', function () {
         if ($('.menu_opened').hasClass('on')) {
