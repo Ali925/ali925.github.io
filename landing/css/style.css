@@ -1465,6 +1465,10 @@ a, a:hover, a:focus {
     transform: skew(0deg)!important;
 }
 
+.play_btn_xs{
+    display: none;
+}
+
 .change-content-btns.talents{
     right: -91px;
 }
@@ -1978,6 +1982,79 @@ a, a:hover, a:focus {
         height: calc(100% - 30px);
         top: 30px;
     }
+}
+
+@media all and (max-width: 584px) {
+    .content_left_content .font_bold.big{
+		font-size: 24px;
+	}
+    .left-bottom-content > p{
+        font-size: 12px;
+    }
+    .slider-btns > a{
+        font-size: 12px;
+    }
+    .right-box > ul > li > a > i{
+        font-size: 12px;
+    }
+    .left-bottom-btns > button{
+        font-size: 9px;
+        padding: 0 12px;
+    }
+    .left-bottom-btns > button:first-child{
+        margin-right: 12px;
+    }
+    .langs-list > div.selected-lang{
+        top: 3px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .content > .content_left{
+        width: 100%;
+    }
+    .content > .content_right{
+        width: 100%;
+        position: absolute;
+    }
+    .content_left_content .font_bold.big{
+		color: white;
+	}
+    .left-bottom-content > p{
+        color: white;
+    }
+    .slider-btns > a{
+        color: white;
+    }
+    .right-box > ul > li > a > i{
+        color: white;
+    }
+    .slider-btns > a.active{
+        color: white;
+        text-decoration: underline!important;
+    }
+    .left-bottom-btns > button{
+        line-height: 30px;    
+    }
+    .video_play .play_btn{
+        display: none;
+    }
+    .play_btn_xs{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-size: contain;
+        box-shadow: 0 0 30px -5px #0b1440;
+        border-radius: 60px;
+        cursor: pointer;
+        width: 40px!important;
+        height: 40px!important;
+        top: 80px!important;
+        right: 30px!important;
+        left: initial!important;
+        background-repeat: no-repeat;
+    }
+    
 }
 
 /*# sourceMappingURL=style.css.map */

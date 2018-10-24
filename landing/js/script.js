@@ -9,6 +9,7 @@ $(document).ready(function () {
     }, 1500);
 
     $('.btn_subscribe_on:not(.btn_schedule_demo)').on('click', function () {
+        console.log("test");
         $('.btn_subscribe_on').toggleClass('close');
         $('.btn_subscribe_on i').toggleClass('fa-paper-plane-o fa-close fadeIn animated');
         $('.subscribe_on').toggleClass('on');
@@ -74,12 +75,12 @@ $(document).ready(function () {
         $("#video").get(0).pause();
     });
 
-    var $videoW = $('.bg_video').width();
-    var $videoH = $('.bg_video').height();
+    var $videoW = $('.bg-video').width();
+    var $videoH = $('.bg-video').height();
     var $windowW = $(window).width();
     var $windowH = $(window).height();
-
-    $('.bg_video video').css({
+    console.log($videoW,$videoH,$windowW,$windowH );
+    $('.bg-video video').css({
         'position': 'relative',
         'left': ($windowW - $videoW) / 2
     });
