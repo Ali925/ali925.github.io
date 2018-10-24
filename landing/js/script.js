@@ -16,8 +16,8 @@ $(document).ready(function () {
         $('.content').toggleClass('opacity');
     });
     
-    $("#subscribeBtn").click(function(){
-        
+    $(".subscribe_btn").click(function(){
+        console.log("test");
     });
     
     $('.content, .left').on('click', function () {
