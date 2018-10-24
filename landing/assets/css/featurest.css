@@ -43,7 +43,7 @@ header{
 
 .fmain-content-imagel{
 	    width: 54%;
-	padding-top: 5.5%;
+	padding-top: 8.5%;
 }
 
 .fmain-content-feature{
@@ -92,7 +92,7 @@ header{
 }
 
 .fmain-content-feature > h5{
-	width: 49%;
+	width: 60%;
 }
 
 .fmain-content-feature > p{
@@ -120,42 +120,32 @@ header{
 	z-index: 3;
 }
 
+.header-top > .header-nav{
+    margin-left: 0;
+}
+
 @media only screen and (min-width: 1280px){
 	.left-circle {
 		 left: -24%;
 	}
 }
 
+@media only screen and (max-width: 1173px){
+    .header-nav{
+        width: 38%;
+    }
+}
+
 @media only screen and (max-width: 1165px){
 	.header-content-text {
-		width: 50%;
+        width: 48%;
+        top: 3rem;
 	}
 	.header-content-image{
-		  width: 49%;
-    	top: 14%;	
-	}
-}
-
-@media only screen and (max-width: 1110px){
-	.header-content-text{
-		width: 47%;
-	}
-	.header-content-text > p{
-		max-width: 88%;
-	}
-	.header-content-image{
-		top: 22%;
-	}
-}
-
-@media only screen and (max-width: 600px){
-	.fmain-top > h2{
-		    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-	}
-	
-	.fmain-content-imagel{
+        width: 49%;
+    	top: 0;	
+	}    
+    .fmain-content-imagel{
 		width: 100%;
 		float: none;
 	}
@@ -165,6 +155,42 @@ header{
 		margin-left: 6%;
 		text-align: left;
 		float: none;
+	}
+	
+	
+    
+}
+
+@media only screen and (max-width: 1110px){
+	.header-content-text{
+		width: 47%;
+        top: 3rem;
+	}
+	.header-content-text > p{
+		max-width: 88%;
+	}
+	.header-content-image{
+		top: 0%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+    .header-content-text{
+        top: 4rem;
+    }
+    .header-top-mob{
+        display: none;
+    }
+    .header-content{
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+	.fmain-top > h2{
+		    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 	}
 	
 	.fmain-content-features{
@@ -178,4 +204,13 @@ header{
 		margin-left: 0;
     text-align: center;
 	}
+    .header-content{
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .header-content{
+        margin-top: 24%;
+    }
 }

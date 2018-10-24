@@ -762,7 +762,7 @@ footer{
   -webkit-appearance: none;
 	-moz-appearance: none;
   appearance: none;
-	background-image: url(../img/world@2x.png);
+	background-image: url(../img/world.svg);
 	background-repeat: no-repeat;
   background-size: 1.25rem;
 	background-position-y: 0.3125rem;
@@ -777,7 +777,7 @@ footer{
     border-radius: 8%;
 	display: none;
 	    position: absolute;
-    top:  calc(-300% - 45px);
+    top:  calc(-300% - 65px);
     left: 0px;
     z-index: 99;
 }
@@ -1238,6 +1238,7 @@ body.modal-open{
     top: 0;
 }
 
+/*
 .footer-bottom{
        position: fixed;
     opacity: 1;
@@ -1254,6 +1255,7 @@ body.modal-open{
 .footer-main-left-bottom{
         top: 20px;
 }
+*/
 
 .header-content{
         margin-top: 0%;
@@ -1277,9 +1279,11 @@ header{
     margin-top: 20.5%;
 }
 
+/*
 footer{
     padding-bottom: 95px;   
 }
+*/
 
 .menu{
     border: none;
@@ -1315,6 +1319,10 @@ footer{
         color: #036bf5;
     font-size: 1.05rem;
     text-transform: uppercase;
+}
+
+.content{
+    overflow: auto;
 }
 
 /*********************/
@@ -1389,6 +1397,7 @@ footer{
 	}
 	.header-top-mob{
 		display: block;
+        z-index: 10;
 	}
 	
 	.header-content-text > button{

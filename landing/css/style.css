@@ -1728,24 +1728,40 @@ a, a:hover, a:focus {
 	.content_left_content .font_bold.big{
 		font-size: 42px;
 	}
+    .left-bottom-btns > button{
+        font-size: 12px;
+        padding: 0 15px;
+    }
 }
 
 @media all and (max-width: 1280px) and (min-width: 1110px) {
 	.content_left_content .font_bold.big{
 		font-size: 36px;
 	}
+    .left-bottom-btns > button{
+        font-size: 12px;
+        padding: 0 15px;
+    }
 }
 
 @media all and (max-width: 1280px) and (min-width: 1110px) {
 	.content_left_content .font_bold.big{
 		font-size: 36px;
 	}
+    .left-bottom-btns > button{
+        font-size: 12px;
+        padding: 0 15px;
+    }
 }
 
 @media all and (max-width: 1110px) and (min-width: 970px) {
 	.content_left_content .font_bold.big{
 		font-size: 31px;
 	}
+    .left-bottom-btns > button{
+        font-size: 12px;
+        padding: 0 15px;
+    }
 }
 
 @media all and (max-width: 970px) and (min-width: 768px) {
@@ -1762,8 +1778,17 @@ a, a:hover, a:focus {
         font-size: 13px;
     }
     .left-bottom-btns > button{
+        font-size: 9px;
+        padding: 0 12px;
+        line-height: 32px;
+    }
+    .schedule-form input{
+        font-size: 13px;
+    }
+    .schedule-form .submit-btn > button{
         font-size: 10px;
-        padding: 0 20px;
+        padding: 0 15px;
+        line-height: 34px;
     }
 }
 
@@ -2025,7 +2050,8 @@ a, a:hover, a:focus {
     }
     .left-bottom-btns > button{
         font-size: 10px;
-        padding: 0 15px;
+        padding: 0 12px;
+        line-height: 32px;
     }
     .d_table_v{
         padding: 0 5%;
@@ -2054,6 +2080,14 @@ a, a:hover, a:focus {
         height: calc(100% - 30px);
         top: 30px;
     }
+    .schedule-form input{
+        font-size: 13px;
+    }
+    .schedule-form .submit-btn > button{
+        font-size: 10px;
+        padding: 0 15px;
+        line-height: 36px;
+    }
 }
 
 @media all and (max-width: 584px) {
@@ -2070,11 +2104,12 @@ a, a:hover, a:focus {
         font-size: 12px;
     }
     .left-bottom-btns > button{
-        font-size: 10px;
-        padding: 0 12px;
+        font-size: 8px;
+        padding: 0 8px;
+        line-height: 32px;
     }
     .left-bottom-btns > button:first-child{
-        margin-right: 12px;
+        margin-right: 8px;
     }
     .langs-list > div.selected-lang{
         top: 3px;
@@ -2131,7 +2166,24 @@ a, a:hover, a:focus {
         left: initial!important;
         background-repeat: no-repeat;
     }
-    
+    .schedule-form input{
+        color: white;
+    }
+    .schedule-form input::placeholder{
+        color: white;    
+    }
+    .schedule-form input::-webkit-input-placeholder{
+        color: white;
+    }
+    .schedule-form input::-moz-placeholder{
+        color: white;
+    }
+    .schedule-form input:-ms-input-placeholder{
+        color: white;
+    }
+    .schedule-form input:-moz-placeholder{
+        color: white;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
