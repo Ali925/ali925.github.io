@@ -124,6 +124,18 @@ header{
     margin-left: 0;
 }
 
+.header-content-text{
+    margin-top: 4.5%;
+}
+
+.header-content{
+    margin-bottom: 3%;
+}
+
+.header-content-image{
+    top: 10%;
+}
+
 @media only screen and (min-width: 1280px){
 	.left-circle {
 		 left: -24%;
@@ -137,13 +149,9 @@ header{
 }
 
 @media only screen and (max-width: 1165px){
-	.header-content-text {
-        width: 48%;
-        top: 3rem;
-	}
 	.header-content-image{
         width: 49%;
-    	top: 0;	
+    	top: 10%;	
 	}    
     .fmain-content-imagel{
 		width: 100%;
@@ -162,16 +170,19 @@ header{
 }
 
 @media only screen and (max-width: 1110px){
-	.header-content-text{
-		width: 47%;
-        top: 3rem;
-	}
+
 	.header-content-text > p{
 		max-width: 88%;
 	}
 	.header-content-image{
-		top: 0%;
+		top: 10%;
 	}
+}
+
+@media only screen and (max-width: 1035px){
+    .header-content-text{
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -182,7 +193,8 @@ header{
         display: none;
     }
     .header-content{
-        margin-top: 12%;
+        margin-top: 0%;
+        margin-bottom: 12%;
     }
 }
 
@@ -205,12 +217,14 @@ header{
     text-align: center;
 	}
     .header-content{
-        margin-top: 20%;
+        margin-top: 0%;
+        margin-bottom: 15%;
     }
 }
 
 @media only screen and (max-width: 400px){
     .header-content{
-        margin-top: 24%;
+        margin-top: 0%;
+        margin-bottom: 20%;
     }
 }

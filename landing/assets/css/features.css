@@ -5,14 +5,8 @@ header{
 	background-image: url(../img/untitled-4@3x.png);
 	background-repeat: no-repeat;
   background-size: 125%;
-  background-position-y: 90%;
-    background-position-x: 20%;
-}
-
-.header-content{
-    margin-top: 0%;
-    top: -7rem; 
-    
+  background-position-y: 0;
+  background-position-x: 52%;
 }
 
 .header-img{
@@ -30,7 +24,6 @@ header{
 .header-content-text{
 	width: 30%;
   margin-top: 13.5%;
-    margin-bottom: 0;
 }
 
 .header-content-text > h3{
@@ -392,6 +385,10 @@ a.show-leftnav{
 	margin-top: 8%;
 }
 
+.header-nav{
+    margin-left: 0;
+}
+
 /*
 @media only screen and (min-width: 1800px) {
 	.header-content{
@@ -482,6 +479,12 @@ a.show-leftnav{
 }
 */
 
+@media only screen and (max-width: 1173px){
+    .header-nav{
+        width: 38%;
+    }
+}
+
 @media only screen and (max-width: 1650px) {
 	header{
 		    background-size: 150%!important;
@@ -553,6 +556,13 @@ a.show-leftnav{
 	}
 }
 
+@media only screen and (max-width: 767px) {
+    .header-top-mob{
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width: 730px) {
 	.fmain-content-video{
 		height: 16.14rem;
@@ -573,11 +583,9 @@ a.show-leftnav{
 }
 
 @media only screen and (min-width: 600px) {
-/*
-	.fmain-content{
+/* 	.fmain-content{
 		display: block!important;
-	}
-*/
+	} */
 	.fmain-nav{
 		display: block!important;
 	}
