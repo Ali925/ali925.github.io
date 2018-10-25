@@ -176,7 +176,16 @@ $(document).ready(function(){
         }
     });
     
-    
+    $("#fViewMore").click(function(){
+        console.log($(this).text());
+        if($(this).text() == "View more"){
+            $(".fmain-content-feature.left-box > ul > li.hidden-item").css("display", "list-item");
+            $(this).text("View less");
+        } else {
+             $(".fmain-content-feature.left-box > ul > li.hidden-item").css("display", "none");
+            $(this).text("View more");
+        }
+    });
 	
 });
 

@@ -2,6 +2,10 @@
     padding-top: 2%;
 }
 
+.header-nav{
+    margin-left: 0;
+}
+
 .header-content{
     top: -2rem;
     padding-top: 0;
@@ -115,6 +119,26 @@ header{
     transform: rotate(157deg);
     opacity: 0.32;
     background-color: #e5f1ff;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.cmain-content-image{
+    padding-left: 0;
+        width: 40%;
+}
+
+.cmain-content-image > img{
+       width: 110%;
+    left: -30px;
+    top: 80px;
+}
+
+.cmain-content-form{
+    width: 60%;
 }
 
 @media only screen and (max-width: 705px) {

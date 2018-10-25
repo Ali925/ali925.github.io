@@ -47,6 +47,10 @@ header::after {
 	margin-top: 2%;
 }
 
+.header-nav{
+    margin-left: 0;
+}
+
 .main-top{
 	    max-width: 76%;
 	padding: 0;

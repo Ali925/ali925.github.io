@@ -972,12 +972,19 @@ body.modal-open{
 
 #recruiterModal .modal-window-leftimg::after{
 	background-image: url(../img/523923@3x.png);
+    
+}
+
+#scheduleModal .modal-window-leftimg{
+    overflow: hidden;
+    background-color: #005fda;
 }
 
 #scheduleModal .modal-window-leftimg::after{
-	background-image: url(../img/group_3@3x.png);
-	    background-size: contain;
-	    top: 8%;
+	background-image: url(../img/scheduleupdated_2.svg);
+    background-size: cover;
+    top: 1%;
+    right: -13%;
 }
 
 .modal-window-header > h2{
@@ -1023,6 +1030,11 @@ body.modal-open{
 .modal-window-form{
 	width: 84%;
 /*	    margin-top: 4.5%;*/
+}
+
+.modal-window-form > form > .row{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .modal-window-form input{

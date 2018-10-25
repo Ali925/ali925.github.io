@@ -99,6 +99,7 @@ header{
 .fmain-nav li.active > span{
 	border-color: #0061fc;
 	height: 3.5rem;
+    width: 100%!important;
 }
 
 .fmain-content{
@@ -190,6 +191,10 @@ header{
 	margin-top: 5%;
 }
 
+#fetBl5 .fmain-content-feature > h5{
+    width: 80%;
+}
+
 #fetBl4 .fmain-content-feature > h5{
 	margin-top: 7%;
 }
@@ -232,6 +237,45 @@ header{
   color: #66666d;
 	width: 73%;
 	margin-top: 4.5%;
+}
+
+/*
+#fetBl5 .fmain-content-feature > ul > li >ul > li:before{
+    content: "•";
+    color: #0061fc;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+#fetBl5 .fmain-content-feature > ul > li > ul >li > p{
+    display: inline-flex;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.69;
+    letter-spacing: -0.0234375rem;
+    color: #66666d;
+    width: 73%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+*/
+
+.fmain-content-feature.left-box > ul > li.hidden-item{
+    display: none;
+}
+
+#fetBl5 .fmain-content-features > .row:nth-child(2) > .fmain-content-feature.left-box > ul > a{
+    display: block;
+    width: 73%;
+    margin-top: 2%;
+    color: #0061fc;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#fetBl5 .fmain-content-features > .row:nth-child(2) > .fmain-content-feature.left-box > ul > a:hover{
+    text-decoration: underline!important;
 }
 
 #fetBl3 .fmain-content-feature > ul > li > p{
@@ -331,18 +375,34 @@ a.show-leftnav{
 }
 
 .fmain-content-image{
-		background-color: #fac152;
+    background-color: #fac152;
     border-radius: 3rem;
     width: 90%;
     overflow: hidden;
     text-align: right;
-    height: 16.5rem;
+    height: 18rem;
 }
 
 .fmain-content-image > img{
-	   width: 40rem;
+    width: 35rem;
     top: -1.2rem;
-    right: -1rem;
+    right: 5rem;
+}
+
+#fetBl6 .fmain-content-image > img{
+    width: 47rem;
+    top: 0.5rem;
+    right: 0;
+    left: 0rem;
+    margin-right: 0;
+}
+
+#fetBl3 .fmain-content-image > img{
+    width: 47rem;
+    top: 1.5rem;
+    right: 0;
+    left: -0.75rem;
+    margin-right: 0;
 }
 
 #fet2.active > span{
@@ -367,6 +427,12 @@ a.show-leftnav{
 	width: 78%;
 }
 
+/*
+#fetBl5 .fmain-content-feature ul > li > ul{
+    margin-left: 20px;
+}
+*/
+
 .fmain-nav + .left-circle{
 	left: -53%;
 	top: 25%;
@@ -387,6 +453,30 @@ a.show-leftnav{
 
 .header-nav{
     margin-left: 0;
+}
+
+header{
+    background-position-x: 35%;
+    padding-bottom: 5%;
+}
+
+.header-content-text{
+    margin-top: 4.5%;
+}
+
+.header-content-text > p{
+    margin-top: 12%;
+}
+
+.header-content-text > button{
+    position: absolute;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+button.btn:hover, button.btn:active, button.btn:focus{
+    background: #ffba42;
+    color: black;
 }
 
 /*
@@ -494,18 +584,27 @@ a.show-leftnav{
 @media only screen and (max-width: 1440px) {
 	header{
 		background-size: 170%!important;
+        padding-bottom: 7%;
 	}
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1331px) {
 	header{
 		background-size: 185%!important;
+        background-position-x: 47%;
 	}
+    .header-content-text{
+        width: 33%;
+    }
 }
 
+
 @media only screen and (max-width: 1240px) {
+    header{
+		background-position-x: 45%;
+	}
 	.header-content-text{
-		    width: 32%;
+        width: 35%;
 	}
 	.header-img{
 		bottom: -70px;
@@ -513,6 +612,7 @@ a.show-leftnav{
 }
 
 @media only screen and (max-width: 1165px) {
+/*
 	.header-content{
 		margin-bottom: 4%;	
 	}
@@ -520,19 +620,28 @@ a.show-leftnav{
 		    width: 36%;
 		margin-top: 8.5%;
 	}
+*/
+    .header-content-text{
+        width: 40%;
+	}
+    header{
+		background-position-x: 40%;
+        padding-bottom: 8%;
+	}
 }
 
 
 @media only screen and (max-width: 1035px) {
 	header{
 		background-image: none;
+        padding-bottom: 10%;
 	}
 	.header-img{
 		display: none;
 	}
 	.header-content-text{
-		    width: 90%!important;
-				margin-top: 6.5%;
+        width: 90%!important;
+        margin-top: 0;
 	}
 	.fmain-nav + .left-circle{
 		left: -70%;
@@ -541,6 +650,12 @@ a.show-leftnav{
 	.fmain-content + .right-circle{
 		right: -60%;
 	}
+    .header-content-text > p{
+        margin-top: 5%;
+    }
+    .header-content-text > button{
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -554,11 +669,29 @@ a.show-leftnav{
 	.fmain-content + .right-circle{
 		right: -70%;
 	}
+    header{
+        padding-bottom: 12%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .header-top-mob{
         display: none;
+    }
+    .header-content-text{
+        top: 4rem;
+    }
+    .header-content-text > button{
+        position: relative;
+        left: 0;
+        margin-left: initial;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+    .fmain-nav li.active > span{
+        width: 100%!important;
+        height: 6rem!important;
     }
 }
 
@@ -693,4 +826,10 @@ a.show-leftnav{
 	.fmain-content-video-btn {
     margin-left: 38%;
 	}
+    header{
+        padding-bottom: 20%;
+    }
+    .footer-demo-box > button{
+        font-size: 0.8rem;
+    }
 }
