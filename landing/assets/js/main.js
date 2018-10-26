@@ -195,3 +195,92 @@ function showModal(id){
 	$(".modal-backdrop").show();
 	$("#" + id).fadeIn({duration: 400, easing: "swing"});
 }
+
+function validateForm(event, el){
+    event.preventDefault();
+    event.stopPropagation();
+    
+    var $form = $(el), success = true, emailTrue = true, phoneTrue = true;
+    
+    var temp1 = "<span class='error-msg'>can't be blank</span>";
+    var temp2 = "<span class='error-msg'>please enter a valid email address</span>";
+    var temp3 = "<span class='error-msg'>this entry can only contain numbers</span>";
+    
+    $form.find("input").each(function(i, el){
+        if(!$(el).val()){
+            success = false;
+            return 0;
+        }
+    });
+
+    if($form.find("textarea").length && ($form.find("textarea").val().trim() == ""))
+        success = false;
+ 
+    if($form.find("input[name='email']").length && $form.find("input[name='email']").val()){
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!re.test($form.find("input[name='email']").val())){
+            success = false;
+            emailTrue = false;
+        }
+    }
+    
+    if($form.find("input[name='phone']").length && $form.find("input[name='phone']").val()){
+        var re = /^\d*$/;
+        if(!re.test($form.find("input[name='phone']").val())){
+            success = false;
+            phoneTrue = false;
+        }
+    }
+    
+    if(!success){
+        $form.find("input").each(function(i, el){
+            if(!$(el).val()){
+                $(el).addClass("error-input");
+                 $(el).parent().find(".error-msg").remove();
+                $(el).parent().append(temp1);
+            }
+            else{
+                $(el).removeClass("error-input");
+                $(el).parent().find(".error-msg").remove();
+            }
+        });
+        
+        if($form.find("textarea").length && ($form.find("textarea").val().trim() == "")){
+            $form.find("textarea").addClass("error-input");
+            $form.find("textarea").parent().find(".error-msg").remove();
+            $form.find("textarea").parent().append(temp1);
+        }else{
+            $form.find("textarea").removeClass("error-input");
+            $form.find("textarea").parent().find(".error-msg").remove();
+        }
+        
+        if(!emailTrue){
+            $form.find("input[name='email']").addClass("error-email");
+            $form.find("input[name='email']").parent().find(".error-msg").remove();
+            $form.find("input[name='email']").parent().append(temp2);
+        }
+        else if($form.find("input[name='email']").length && $form.find("input[name='email']").val()){
+            $form.find("input[name='email']").removeClass("error-email");
+            $form.find("input[name='email']").parent().find(".error-msg").remove();
+        }
+        
+        if(!phoneTrue){
+            $form.find("input[name='phone']").addClass("error-phone");
+            $form.find("input[name='phone']").parent().find(".error-msg").remove();
+            $form.find("input[name='phone']").parent().append(temp3);
+        }
+        else if($form.find("input[name='phone']").length && $form.find("input[name='phone']").val()){
+            $form.find("input[name='phone']").removeClass("error-phone");
+            $form.find("input[name='phone']").parent().find(".error-msg").remove();
+        }
+        
+    } else {
+        $form.find("input").each(function(i, el){
+            $(el).removeClass("error-input");
+            $(el).removeClass("error-email");
+        });
+        if($form.find("textarea").length)
+            $form.find("textarea").removeClass("error-input");
+        $(".error-msg").remove();
+    }
+}

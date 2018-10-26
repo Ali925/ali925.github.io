@@ -457,7 +457,8 @@ a.show-leftnav{
 
 header{
     background-position-x: 35%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    background-position-y: 250%;
 }
 
 .header-content-text{
@@ -466,6 +467,17 @@ header{
 
 .header-content-text > p{
     margin-top: 12%;
+}
+
+.header-content-text > .play-btn{
+    width: 6.5rem;
+    height: auto;
+    position: absolute;
+    right: -40%;
+    bottom: -3%;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0 0 5rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 .header-content-text > button{
@@ -477,6 +489,10 @@ header{
 button.btn:hover, button.btn:active, button.btn:focus{
     background: #ffba42;
     color: black;
+}
+
+.header-nav > a:last-child{
+    margin-left: 0;
 }
 
 /*
@@ -569,34 +585,37 @@ button.btn:hover, button.btn:active, button.btn:focus{
 }
 */
 
-@media only screen and (max-width: 1173px){
-    .header-nav{
-        width: 38%;
+@media only screen and (min-width: 2500px){
+    header{
+        background-size: 100%;
+        background-position-y: -4rem;
     }
 }
 
-@media only screen and (max-width: 1650px) {
-	header{
-		    background-size: 150%!important;
-	}
+@media only screen and (min-width: 1035px) and (max-width: 2500px){
+    header{
+        background-size: cover;
+        background-position-y: -1rem;
+    }
 }
 
-@media only screen and (max-width: 1440px) {
-	header{
-		background-size: 170%!important;
-        padding-bottom: 7%;
-	}
+@media only screen and (max-width: 1400px) {
+    header{
+        background-position-x: -25rem;
+    }
 }
+
 
 @media only screen and (max-width: 1331px) {
-	header{
-		background-size: 185%!important;
-        background-position-x: 47%;
-	}
     .header-content-text{
         width: 33%;
     }
+    
+    .header-content-text > .play-btn{
+        right: -28%;
+    }
 }
+
 
 
 @media only screen and (max-width: 1240px) {
@@ -609,6 +628,9 @@ button.btn:hover, button.btn:active, button.btn:focus{
 	.header-img{
 		bottom: -70px;
 	}
+    .header-content-text > .play-btn{
+        right: -22%;
+    }
 }
 
 @media only screen and (max-width: 1165px) {
@@ -625,16 +647,22 @@ button.btn:hover, button.btn:active, button.btn:focus{
         width: 40%;
 	}
     header{
-		background-position-x: 40%;
-        padding-bottom: 8%;
+		background-position-x: 44%;
+        background-position-y: -1rem;
+        background-size: 185%;
+        padding-bottom: 2%;
 	}
+    .header-content-text > .play-btn{
+        right: -18%;
+    }
 }
 
 
 @media only screen and (max-width: 1035px) {
 	header{
 		background-image: none;
-        padding-bottom: 10%;
+        padding-bottom: 0;
+        background-color: #0061fc;
 	}
 	.header-img{
 		display: none;
@@ -656,6 +684,11 @@ button.btn:hover, button.btn:active, button.btn:focus{
     .header-content-text > button{
         margin-top: 5%;
     }
+    .header-content-text > .play-btn{
+        right: 0;
+        width: 5rem;
+    }
+    
 }
 
 @media only screen and (max-width: 900px) {
@@ -669,12 +702,12 @@ button.btn:hover, button.btn:active, button.btn:focus{
 	.fmain-content + .right-circle{
 		right: -70%;
 	}
-    header{
-        padding-bottom: 12%;
-    }
 }
 
 @media only screen and (max-width: 767px) {
+    header{
+        padding-bottom: 12%;
+	}
     .header-top-mob{
         display: none;
     }
@@ -725,6 +758,12 @@ button.btn:hover, button.btn:active, button.btn:focus{
 }
 
 @media only screen and (max-width: 600px) {
+    header{
+        padding-bottom: 14%;
+    }
+    .header-content-text > .play-btn{
+        width: 4rem;
+    }
 	main{
 		text-align: center;
 		width: 100%;
@@ -821,7 +860,7 @@ button.btn:hover, button.btn:active, button.btn:focus{
 @media only screen and (max-width: 450px) {
 	.fmain-content-video{
 		height: 16rem;
-    background-size: 95%;
+        background-size: 95%;
 	}
 	.fmain-content-video-btn {
     margin-left: 38%;
@@ -831,5 +870,11 @@ button.btn:hover, button.btn:active, button.btn:focus{
     }
     .footer-demo-box > button{
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 398px) {
+    .header-content-text > .play-btn{
+        bottom: 17px;
     }
 }

@@ -1,10 +1,8 @@
-.header-container{
-    padding-top: 2%;
-}
-
 .header-nav{
     margin-left: 0;
 }
+
+/*
 
 .header-content{
     top: -2rem;
@@ -12,6 +10,7 @@
     margin-bottom: 0;
     margin-top: 0;
 }
+*/
 
 
 .cmain-content-image{
@@ -33,14 +32,15 @@
 }
 
 .cmain-content-form-text{
-	font-size: 1.25rem;
+  margin: 0 auto;
+  font-size: 1.25rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.75;
   letter-spacing: -0.03125rem;
   color: #000000;
-	    width: 88%;
+  width: 70%;
 }
 
 .cmain-content-form > form label{
@@ -68,13 +68,16 @@
 }
 
 form{
-	width: 90%;
+    text-align: right;
+	width: 70%;
+    margin: 0 auto;
 	margin-top: 4%;
 }
 
 form > .row{
 	width: 100%;
 	margin-bottom: 2.5%;
+    text-align: left;
 }
 
 form > .row:first-child > .form-det{
@@ -108,13 +111,13 @@ header{
 	padding-right: 5%;
 }
 
-.top-circle{
-		    z-index: 1;
+.top-circle{    
+    z-index: 1;
     position: absolute;
     top: -22%;
-    right: 1%;
-    height: 50.4375rem;
-    width: 67.4375rem;
+    right: -12%;
+    height: 70.4375rem;
+    width: 94.4375rem;
     border-radius: 100%;
     transform: rotate(157deg);
     opacity: 0.32;
@@ -138,7 +141,68 @@ header{
 }
 
 .cmain-content-form{
-    width: 60%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+form input:focus, form textarea:focus{
+    border-color: #0061fc;
+}
+
+form input, form textarea{
+    transition: all 0.5s linear;
+}
+
+form input.error-input{
+    border-color: red;
+}
+
+form input.error-email{
+    border-color: red;
+}
+
+form textarea.error-input{
+    border-color: red;
+}
+
+
+@media only screen and (max-width: 1036px) {
+    .header-content{
+        margin-top: 0;
+    }
+    .header-line{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+	.header-content-text{
+		    width: 100%;
+	}
+    .faq-box > h5{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+	.faq-box > a{
+		display: none;
+	}
+    .header-content{
+        margin-top: 6%;
+    }
+    .header-content-text > h3{
+        font-size: 2rem;
+    }
+    .faq-box > h5{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .header-content{
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (max-width: 705px) {
@@ -155,4 +219,11 @@ header{
 	form{
 		width: 95%;
 	}
+    form > .row:first-child > .form-det{
+        float: none;
+        width: 100%;
+    }
+    form > .row:first-child > .form-det:last-child{
+        margin-top: 2.5%;
+    }
 }

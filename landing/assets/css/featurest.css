@@ -1,7 +1,7 @@
 header{
 	background-image: none;
 	background-color: #0061fc;
-    padding-bottom: 0;
+    padding-bottom: 0.2%;
 }
 
 .header-content{
@@ -143,6 +143,12 @@ header{
 	}
 }
 
+@media only screen and (max-width: 1213px){
+    .header-content-text > p{
+        max-width: 80%;
+    }
+}
+
 @media only screen and (max-width: 1173px){
     .header-nav{
         width: 38%;
@@ -170,10 +176,10 @@ header{
     
 }
 
-@media only screen and (max-width: 1110px){
+@media only screen and (max-width: 1191px){
 
 	.header-content-text > p{
-		max-width: 88%;
+		max-width: 92%;
 	}
 	.header-content-image{
 		top: 10%;
@@ -221,6 +227,12 @@ header{
         margin-top: 0%;
         margin-bottom: 15%;
     }
+}
+
+@media only screen and (max-width: 450px){
+    header{
+        padding-bottom: 2%;
+    }   
 }
 
 @media only screen and (max-width: 400px){

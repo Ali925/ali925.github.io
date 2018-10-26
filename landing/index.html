@@ -129,7 +129,7 @@
                                 <p>Automate your recruitment workflow and address all challanges simply and effectively. With the right people, everything becomes possible.</p>
                                 <div class="left-bottom-btns">
                                     <button class="btn" onclick="window.location.href = 'features_3.html';">Read more</button>
-                                    <button class="btn schedule_btn">Schedule a Demo</button>
+                                    <button class="btn schedule_btn">Schedule Demo</button>
                                 </div>
                             </div>
 <!--
@@ -263,7 +263,7 @@
 -->
                             </div>        
                             <div class="schedule-form">
-                                <form>
+                                <form onsubmit="validateForm(event, this)">
                                     <div class="row clearfix">
                                         <div class="form-group input-effect left-box">
 
@@ -286,7 +286,7 @@
                                     <div class="row">
                                         <div class="form-group input-effect">
 
-                                            <input class="effect-16" type="email" id="email" name="email" placeholder="Work email">
+                                            <input class="effect-16" type="text" id="email" name="email" placeholder="Work email">
                                             <span class="focus-border"></span>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
 -->
         <div class="subscribe_on">
             <div class="subscribe">
-                <form class="subscribe_form" action="subscribe.php" method="POST">
+                <form class="subscribe_form" onsubmit="validateForm(event, this)">
                     <div class="form-group">
                         <div class="controls text-left">
                             <label for="mail-subscribe">Subscribe<span class="color_red">.</span></label>
