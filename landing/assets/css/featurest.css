@@ -110,7 +110,7 @@ header{
 
 .fmain-content + .right-circle{
 	  right: -45%;
-    top: 82%;
+    top: 74%;
 }
 
 .footer-main-left-text{
@@ -135,6 +135,10 @@ header{
 
 .header-content-image{
     top: 10%;
+}
+
+footer{
+    margin-bottom: 3%;
 }
 
 @media only screen and (min-width: 1280px){

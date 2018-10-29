@@ -16,6 +16,14 @@ $(document).ready(function () {
 //        $('.content').toggleClass('opacity');
 //    });
     
+    $(".btn_subscribe_on").click(function(){
+        console.log("test");
+        showSubscribe = true;
+        $('.subscribe_on').toggleClass('on');
+        $('.content').toggleClass('opacity');
+        setTimeout(function(){showSubscribe = false;}, 500);
+    });
+    
     $(".subscribe_btn").click(function(){
         console.log("test");
         showSubscribe = true;

@@ -1471,6 +1471,10 @@ form span.error-msg:before{
     margin-left: -6px;
 }
 
+footer{
+    margin-bottom: 5%;
+}
+
 /*******************/
 /***** Form validation *****/
 
