@@ -16,11 +16,12 @@ $(document).ready(function () {
 //        $('.content').toggleClass('opacity');
 //    });
     
-    $(".btn_subscribe_on").click(function(){
+    $(".btn_subscribe_on:not(.btn_schedule_demo)").click(function(){
         console.log("test");
         showSubscribe = true;
         $('.subscribe_on').toggleClass('on');
         $('.content').toggleClass('opacity');
+        $(".btn_subscribe_on").hide();
         setTimeout(function(){showSubscribe = false;}, 500);
     });
     
@@ -42,6 +43,7 @@ $(document).ready(function () {
                 $('.content').toggleClass('opacity');
             }
             $('.subscribe_on').removeClass('on');
+            $(".btn_subscribe_on").show();
         }
     });
     $('.content, .subscribe_on').on('click', function () {

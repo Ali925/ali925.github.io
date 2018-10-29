@@ -166,6 +166,14 @@ form textarea.error-input{
 }
 
 
+.cmain-content-form-text > h3{
+    font-weight: bold;
+}
+
+.cmain-content-form-text > p{
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 1036px) {
     .header-content{
         margin-top: 0;

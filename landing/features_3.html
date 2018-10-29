@@ -130,6 +130,10 @@
                         </div>
 -->
                         <nav class="header-nav left-box">
+                           <a href="#">
+                                For recruiters
+                            </a>
+                            
                             <a href="featurest_3.html">
                                 For talents
                             </a>
@@ -579,7 +583,7 @@
                 <footer>
                     <div class="footer-demo-box">
                         <h2>Recruit like a <b>boss</b>, combined with a <b>monk</b>, wrapped in a <b>ninja</b>.</h2>
-                        <button type="button" onclick="showModal('scheduleModal')">Schedule Demo Now</button>
+<!--                        <button type="button" onclick="showModal('scheduleModal')">Schedule Demo Now</button>-->
                     </div>
 <!--
                     <div class="footer-main clearfix">
@@ -653,23 +657,31 @@
                 </footer>
             </div>
         </div>
-<!--
+        
         <div id="sheduleBtn" class="btn btn_subscribe_on btn_schedule_demo background_red2" onclick="showModal('scheduleModal');"><i class="fa fa-calendar-plus-o fa-3x"></i>Schedule</div>
         <div class="btn btn_subscribe_on background_red2"><i class="fa fa-paper-plane-o fa-3x"></i>SUBSCRIBE</div>
--->
-        <div class="subscribe_on">
+        
+       <div class="subscribe_on">
             <div class="subscribe">
                 <form class="subscribe_form" onsubmit="validateForm(event, this)">
                     <div class="form-group">
                         <div class="controls text-left">
-                            <label for="mail-subscribe">Subscribe<span class="color_red">.</span></label>
+                            <label for="mail-subscribe">
+                                <p>Glorri is more than just software. We love creating genuine connections that bring value.</p>
+                            </label>
                             <br>
-                            <input type="text" id="mail-subscribe" name="email" placeholder="Enter your email"
-                                   onfocus="this.placeholder = 'Enter your email'"
-                                   onblur="this.placeholder = 'Enter your email'"
+                            <input type="text" id="mail-subscribe" name="email" placeholder="Enter your email to get notified when we launch"
+                                   onfocus="this.placeholder = 'Enter your email to get notified when we launch'"
+                                   onblur="this.placeholder = 'Enter your email to get notified when we launch'"
                                    class="form-control email"/>
+                            <div class="radio-btns">
+                                <input type="radio" value="recruiter" name="role">
+                                <label for="">I'm recruiter</label>
+                                <input type="radio" value="talent" name="role">
+                                <label for="">I'm talent</label>
+                            </div>
                             <button class="submit btn background_red2" type="submit" value="submit">
-                                Subscribe
+                                Get invited
                             </button>
                         </div>
                     </div>
@@ -692,13 +704,15 @@
 		<div class="modal-inner">
 		<div class="modal-window">
 			<div class="modal-window-leftimg left-box">
+			    <div class="modal-window-leftimg-foot">
+				</div>
 			</div>
 			<div class="modal-window-content right-box">
 				<div class="modal-window-header">
-					<h2>Schedule a Demo</h2>
+					<h2>Request Free Demo</h2>
 				</div>
 				<div class="modal-window-text">
-					<p>Glorri takes you to recruiting heaven.</p>
+					<p>Demo is the fastest way to learn about Glorri. Ask us anything. We offer free online and on-premises training for you and your staff. Fill out the form, we will get in touch with you shortly, lets pick the meeting date.</p>
 				</div>
 				<div class="modal-window-form">
 					<form onsubmit="validateForm(event, this)">
@@ -742,7 +756,7 @@
 						</div>
 						<div class="row">
 							<div class="submit-btn">
-								<button type="submit">Schedule Now</button>
+								<button type="submit">Request Now</button>
 							</div>
 						</div>
 <!--

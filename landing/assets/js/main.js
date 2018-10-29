@@ -64,11 +64,11 @@ $(document).ready(function(){
 			$(".fmain-nav li").removeClass("active");
 			$(this).parent().addClass("active");
 			$(".fmain-content").hide();		
-			if($(window).width() > 600){
+			if($(window).width() > 1133){
                 console.log("okokok");
 				$("#fetBl"+id).show();
 			}
-        if($(window).width() <= 600){
+        if($(window).width() <= 1133){
 			$(".show-leftnav").click();
         }
 	});
@@ -186,6 +186,26 @@ $(document).ready(function(){
             $(this).text("View more");
         }
     });
+    
+    $(".subscribe_form .submit").click(function(){
+        setTimeout(function(){
+            if(!$(".subscribe_form").hasClass("invalid-form")){
+                var data = {};
+                data.email = $(".subscribe_form input[name='email']").val();
+                data.role = $(".subscribe_form input[name='role']").val();
+                $.ajax({
+                    method: "POST",
+                    url: "http://127.0.0.1:5000/subscribe",
+                    data: data
+                }).then(function(res){
+                    console.log(res);
+                    alert("Successfully sent!");
+                }, function(err){
+                    console.log(err);
+                });
+            }
+        }, 100);
+    });
 	
 });
 
@@ -200,7 +220,7 @@ function validateForm(event, el){
     event.preventDefault();
     event.stopPropagation();
     
-    var $form = $(el), success = true, emailTrue = true, phoneTrue = true;
+    var $form = $(el), success = true, emailTrue = true, phoneTrue = true, roleTrue = true;
     
     var temp1 = "<span class='error-msg'>can't be blank</span>";
     var temp2 = "<span class='error-msg'>please enter a valid email address</span>";
@@ -212,6 +232,11 @@ function validateForm(event, el){
             return 0;
         }
     });
+    
+    if($form.find("input[name='role']") && !$form.find("input[name='role']").is(':checked')){
+        success = false;
+        roleTrue = false;
+    }
 
     if($form.find("textarea").length && ($form.find("textarea").val().trim() == ""))
         success = false;
@@ -274,13 +299,24 @@ function validateForm(event, el){
             $form.find("input[name='phone']").parent().find(".error-msg").remove();
         }
         
+        if(!roleTrue){
+            $form.find("input[name='role']").addClass("error-role");
+        } else {
+            $form.find("input[name='role']").removeClass("error-role");
+        }
+        
+        $form.addClass("invalid-form");
+        
     } else {
         $form.find("input").each(function(i, el){
             $(el).removeClass("error-input");
             $(el).removeClass("error-email");
+            $(el).removeClass("error-role");
         });
         if($form.find("textarea").length)
             $form.find("textarea").removeClass("error-input");
         $(".error-msg").remove();
+        
+        $form.removeClass("invalid-form");
     }
 }

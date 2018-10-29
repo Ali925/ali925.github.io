@@ -742,15 +742,16 @@ a, a:hover, a:focus {
   bottom: 0;
   left: 0;
   width: 90px;
-  height: 89px;
+  height: 60px;
   border-top: 1px solid #bdcfdd;
   cursor: pointer; }
   .menu .menu-icon {
+      top: 22px;
     width: 20px;
     height: 12px;
     position: relative;
     transition: opacity 0.5s;
-    margin: 38px auto; }
+    margin: 0 auto; }
     .menu .menu-icon:after, .menu .menu-icon:before, .menu .menu-icon span {
       width: 100%;
       height: 2px;
@@ -1166,14 +1167,18 @@ a, a:hover, a:focus {
 }
 
 .btn.btn_subscribe_on{
-        bottom: 198px;
-    background: linear-gradient(to right, #337ab7, #0084b4) !important;
+        bottom: 188px;
+    background: none!important;
+    background-color: #036bf5!important;
 }
 
 #sheduleBtn.btn_schedule_demo{
-        bottom: 110px;
-    background: linear-gradient(to right, #3c763d, #3c763d) !important;
+        bottom: 100px;
+    background: none!important;
+    background-color: #5abe80!important;
 }
+
+
 
 .brand{
         max-width: 32px;
@@ -1187,7 +1192,7 @@ a, a:hover, a:focus {
 }
 
 .menu{
-    top: 50px;
+    top: 65px;
     border: none;
     width: 100%;
 }
@@ -1767,6 +1772,54 @@ a, a:hover, a:focus {
   color: red;
 }
 
+.subscribe .subscribe_form label{
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    text-transform: none;
+    top: -20px;
+    color: #6f7a82;
+    font-weight: 400;
+    width: 105%;
+    max-width: 105%;
+    text-align: center;
+}
+
+.subscribe_form label > p{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.subscribe_form span.error-msg{
+    bottom: 60px;
+}
+
+.subscribe .subscribe_form #mail-subscribe{
+    font-size: 15px;
+    border: none;
+    border-radius: 0;
+    bottom: -25px;
+}
+
+.subscribe::after{
+    content: none;
+}
+
+.radio-btns > input{
+    display: inline;
+    top: -17px;
+}
+
+.radio-btns > input:nth-child(3){
+    margin-left: 20px;
+}
+
+.radio-btns > label{
+    font-size: 15px!important;
+    display: inline;
+    color: #999999!important;
+}
+
 /***********/
 
 /*
@@ -1947,7 +2000,8 @@ a, a:hover, a:focus {
       height: 50px;
       width: 50px;
       border-top: none; }
-      .left .menu .menu-icon {
+      .left .menu .menu-icon {    
+          top: 0px;
         margin: 20px 0; }
     .left .brand {
       width: 50px;

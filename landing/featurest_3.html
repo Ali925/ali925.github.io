@@ -134,6 +134,10 @@
                             <a href="features_3.html">
                                 For recruiters
                             </a>
+                            
+                            <a href="#">
+                                For talents
+                            </a>
 <!--
                             <a href="pricing_3.html">
                                 Pricing
@@ -357,14 +361,22 @@
                 <form class="subscribe_form" onsubmit="validateForm(event, this)">
                     <div class="form-group">
                         <div class="controls text-left">
-                            <label for="mail-subscribe">Subscribe<span class="color_red">.</span></label>
+                            <label for="mail-subscribe">
+                                <p>Glorri is more than just software. We love creating genuine connections that bring value.</p>
+                            </label>
                             <br>
-                            <input type="text" id="mail-subscribe" name="email" placeholder="Enter your email"
-                                   onfocus="this.placeholder = 'Enter your email'"
-                                   onblur="this.placeholder = 'Enter your email'"
+                            <input type="text" id="mail-subscribe" name="email" placeholder="Enter your email to get notified when we launch"
+                                   onfocus="this.placeholder = 'Enter your email to get notified when we launch'"
+                                   onblur="this.placeholder = 'Enter your email to get notified when we launch'"
                                    class="form-control email"/>
+                            <div class="radio-btns">
+                                <input type="radio" value="recruiter" name="role">
+                                <label for="">I'm recruiter</label>
+                                <input type="radio" value="talent" name="role">
+                                <label for="">I'm talent</label>
+                            </div>
                             <button class="submit btn background_red2" type="submit" value="submit">
-                                Subscribe
+                                Get invited
                             </button>
                         </div>
                     </div>

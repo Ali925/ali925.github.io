@@ -945,7 +945,7 @@ body.modal-open{
     left: 0;
     z-index: 1040;
     background-color: #000;
-	opacity: .5;
+	opacity: .9;
 }
 
 .modal{
@@ -1543,6 +1543,11 @@ footer{
 
 .modal-window-form input.error-phone + span{
     display: none;
+}
+
+
+.error-role + label{
+    color: red!important;
 }
 
 /*********************/

@@ -141,6 +141,14 @@ footer{
     margin-bottom: 3%;
 }
 
+.header-nav > a:first-child{
+    color: white;
+}
+
+.header-nav > a:last-child{
+    color: #ffc052;
+}
+
 @media only screen and (min-width: 1280px){
 	.left-circle {
 		 left: -24%;
