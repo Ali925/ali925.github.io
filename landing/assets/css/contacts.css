@@ -67,7 +67,7 @@
     font-size: 1.1rem;
 }
 
-form{
+.cmain-content-form > form{
     text-align: right;
 	width: 70%;
     margin: 0 auto;
