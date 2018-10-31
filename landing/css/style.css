@@ -1355,7 +1355,7 @@ a, a:hover, a:focus {
 }
 
 .en-icon{
-    background-image: url(../assets/icons/enflag.svg);
+    background-image: url(../assets/icons/flag_bg.svg);
 }
 
 .langs-list{
@@ -1818,6 +1818,15 @@ a, a:hover, a:focus {
     font-size: 15px!important;
     display: inline;
     color: #999999!important;
+}
+
+iframe#video{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.coming-soon-page .btn_subscribe_on{
+    bottom: 90px;
 }
 
 /***********/

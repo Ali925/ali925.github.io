@@ -261,17 +261,17 @@ header{
 }
 */
 
-.fmain-content-feature.left-box > ul > li.hidden-item{
+.fmain-content-feature > ul > li.hidden-item{
     display: none;
 }
 
-#fetBl5 .fmain-content-features > .row:nth-child(2) > .fmain-content-feature.left-box > ul > a{
+#fetBl5 .fmain-content-features > .row > .fmain-content-feature > ul > a{
     display: block;
     width: 73%;
     margin-top: 2%;
     color: #0061fc;
     text-transform: capitalize;
-    text-align: center;
+    text-align: right;
 }
 
 #fetBl5 .fmain-content-features > .row:nth-child(2) > .fmain-content-feature.left-box > ul > a:hover{

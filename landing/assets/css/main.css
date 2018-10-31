@@ -1019,7 +1019,7 @@ body.modal-open{
 }
 
 #scheduleModal .modal-window-leftimg::after{
-    background-image: url(../img/schill.svg);
+    background-image: url(../img/scheduledemo.svg);
     top: 1%;
     right: -13%;
     background-position-x: -167px;

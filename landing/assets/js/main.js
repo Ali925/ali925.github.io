@@ -178,13 +178,13 @@ $(document).ready(function(){
         }
     });
     
-    $("#fViewMore").click(function(){
+    $(".fViewMore").click(function(){
         console.log($(this).text());
         if($(this).text() == "View more"){
-            $(".fmain-content-feature.left-box > ul > li.hidden-item").css("display", "list-item");
+            $(this).parent().find(".hidden-item").css("display", "list-item");
             $(this).text("View less");
         } else {
-             $(".fmain-content-feature.left-box > ul > li.hidden-item").css("display", "none");
+             $(this).parent().find(".hidden-item").css("display", "none");
             $(this).text("View more");
         }
     });
@@ -446,6 +446,7 @@ $(document).ready(function(){
             }
         }, 100);
     });
+
 });
 
 function showModal(id){

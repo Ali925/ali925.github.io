@@ -149,6 +149,10 @@ footer{
     color: #ffc052;
 }
 
+.hidden-item{
+    display: none;
+}
+
 @media only screen and (min-width: 1280px){
 	.left-circle {
 		 left: -24%;
