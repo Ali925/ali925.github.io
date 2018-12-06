@@ -139,9 +139,9 @@ header{
 	background-color: #036bf5;
 	background-image: url(../img/oval-3-copy@3x.png);
 	background-repeat: no-repeat;
-  background-position-x: right;
-  background-size: contain;
-  background-position-y: 0;
+    background-position-x: right;
+    background-size: contain;
+    background-position-y: 0;
 	box-shadow: 0 0.15625rem 4.21875rem 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -154,8 +154,8 @@ header{
 .header-top{
 	width: 100%;
 	padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 3%;
+    padding-right: 5%;
+    padding-top: 3%;
 }
 
 .header-top-mob{
@@ -163,15 +163,15 @@ header{
 }
 
 .header-top-mob > a{
-	  font-size: 1.875rem;
+    font-size: 1.875rem;
     color: white;
 }
 
 .header-top-mob > nav{
-		display: none;
-	    padding-top: 20%;
+    display: none;
+    padding-top: 20%;
     text-align: center;
-	    position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #036bf5;
@@ -199,13 +199,13 @@ header{
 }
 
 .close-btn{
-		position: absolute;
+    position: absolute;
     top: 1.5625rem;
     right: 1.875rem;
 }
 
 .close-btn > a{
-	    color: white;
+    color: white;
     font-size: 1.875rem;
 }
 
