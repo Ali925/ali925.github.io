@@ -1,6 +1,7 @@
 header{
 	background-image: none;
 	background-color: #0061fc;
+    padding-bottom: 0.2%;
 }
 
 .header-content{
@@ -43,7 +44,7 @@ header{
 
 .fmain-content-imagel{
 	    width: 54%;
-	padding-top: 5.5%;
+	padding-top: 8.5%;
 }
 
 .fmain-content-feature{
@@ -92,7 +93,7 @@ header{
 }
 
 .fmain-content-feature > h5{
-	width: 49%;
+	width: 60%;
 }
 
 .fmain-content-feature > p{
@@ -109,7 +110,7 @@ header{
 
 .fmain-content + .right-circle{
 	  right: -45%;
-    top: 82%;
+    top: 74%;
 }
 
 .footer-main-left-text{
@@ -120,42 +121,62 @@ header{
 	z-index: 3;
 }
 
+.header-top > .header-nav{
+    margin-left: 0;
+}
+
+.header-content-text{
+    margin-top: 4.5%;
+}
+
+.header-content{
+    margin-bottom: 3%;
+}
+
+.header-content-image{
+    top: 10%;
+}
+
+footer{
+    margin-bottom: 3%;
+}
+
+.header-nav > a:first-child{
+    color: white;
+}
+
+.header-nav > a:last-child{
+    color: #ffc052;
+}
+
+.hidden-item{
+    display: none;
+}
+
 @media only screen and (min-width: 1280px){
 	.left-circle {
 		 left: -24%;
 	}
 }
 
+@media only screen and (max-width: 1213px){
+    .header-content-text > p{
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1173px){
+    .header-nav{
+        width: 38%;
+    }
+}
+
 @media only screen and (max-width: 1165px){
-	.header-content-text {
-		width: 50%;
-	}
 	.header-content-image{
-		  width: 49%;
-    	top: 14%;	
-	}
-}
-
-@media only screen and (max-width: 1110px){
-	.header-content-text{
-		width: 47%;
-	}
-	.header-content-text > p{
-		max-width: 88%;
-	}
-	.header-content-image{
-		top: 22%;
-	}
-}
-
-@media only screen and (max-width: 600px){
-	.fmain-top > h2{
-		    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-	}
-	
-	.fmain-content-imagel{
+        width: 49%;
+    	top: 10%;	
+	}    
+    .fmain-content-imagel{
 		width: 100%;
 		float: none;
 	}
@@ -165,6 +186,46 @@ header{
 		margin-left: 6%;
 		text-align: left;
 		float: none;
+	}
+	
+	
+    
+}
+
+@media only screen and (max-width: 1191px){
+
+	.header-content-text > p{
+		max-width: 92%;
+	}
+	.header-content-image{
+		top: 10%;
+	}
+}
+
+@media only screen and (max-width: 1035px){
+    .header-content-text{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header-content-text{
+        top: 4rem;
+    }
+    .header-top-mob{
+        display: none;
+    }
+    .header-content{
+        margin-top: 0%;
+        margin-bottom: 12%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+	.fmain-top > h2{
+		    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 	}
 	
 	.fmain-content-features{
@@ -178,4 +239,21 @@ header{
 		margin-left: 0;
     text-align: center;
 	}
+    .header-content{
+        margin-top: 0%;
+        margin-bottom: 15%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    header{
+        padding-bottom: 2%;
+    }   
+}
+
+@media only screen and (max-width: 400px){
+    .header-content{
+        margin-top: 0%;
+        margin-bottom: 20%;
+    }
 }

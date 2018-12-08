@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Darwin Pro ExtraLight It';
+    src: url('DarwinPro-ExtraLightIt.woff2') format('woff2'),
+        url('DarwinPro-ExtraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-Light.woff2') format('woff2'),
+        url('DarwinPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro Thin It';
+    src: url('DarwinPro-ThinIt.woff2') format('woff2'),
+        url('DarwinPro-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro Light It';
+    src: url('DarwinPro-LightIt.woff2') format('woff2'),
+        url('DarwinPro-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-Thin.woff2') format('woff2'),
+        url('DarwinPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro SemiBold It';
+    src: url('DarwinPro-SemiBoldIt.woff2') format('woff2'),
+        url('DarwinPro-SemiBoldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-ExtraLight.woff2') format('woff2'),
+        url('DarwinPro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro Black It';
+    src: url('DarwinPro-BlackIt.woff2') format('woff2'),
+        url('DarwinPro-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro Bold It';
+    src: url('DarwinPro-BoldIt.woff2') format('woff2'),
+        url('DarwinPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-Black.woff2') format('woff2'),
+        url('DarwinPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-Regular.woff2') format('woff2'),
+        url('DarwinPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-SemiBold.woff2') format('woff2'),
+        url('DarwinPro-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro';
+    src: url('DarwinPro-Bold.woff2') format('woff2'),
+        url('DarwinPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Darwin Pro Regular It';
+    src: url('DarwinPro-RegularIt.woff2') format('woff2'),
+        url('DarwinPro-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
