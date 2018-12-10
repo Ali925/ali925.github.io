@@ -199,7 +199,7 @@ h3{
 
 .header-content-text > h3{
     font-size: 4rem;
-    color: #036bf5;
+    color: #0066f9;
     letter-spacing: -0.03125rem;
     font-weight: normal;
     line-height: initial;
@@ -289,7 +289,7 @@ section.promo{
 }
 
 .main-content{
-    padding-top: 23rem;
+    padding-top: 18rem;
     max-width: none;
     margin: 0;
 }
