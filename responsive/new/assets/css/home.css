@@ -198,7 +198,7 @@ h3{
 }
 
 .header-content-text > h3{
-    font-size: 4rem;
+    font-size: 3.7rem;
     color: #0066f9;
     letter-spacing: -0.03125rem;
     font-weight: normal;
@@ -213,7 +213,7 @@ h3{
     font-size: 2.4rem;
     max-width: 100%;
     line-height: initial;
-    font-family: "DarwinPro";
+    font-family: "SFPro";
 }
 
 .header-content-text > span{
@@ -221,8 +221,8 @@ h3{
     display: block;
     position: relative;
     font-size: 1.375rem;
-    color: #555555;
-    font-family: "DarwinPro-Light";
+    color: #646f79;
+    font-family: "SFPro";
 }
 
 .header-content-text > span:not(:last-child){
