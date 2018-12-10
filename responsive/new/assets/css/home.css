@@ -35,7 +35,7 @@ h3{
 
 .header-top-inner > .header-nav.left{
 	margin-left: 0;
-	width: 25%;
+	width: 29%;
 }
 
 .header-top-white{
@@ -84,7 +84,7 @@ h3{
 .header-nav{
 	  width: auto;
     text-align: right;
-    margin-top: 1.2125rem;
+    margin-top: 1rem;
 		margin-left: 0;
 }
 
@@ -95,13 +95,15 @@ h3{
 .header-nav > .custom-lang-select{
 	  width: auto;
     display: inline-block;
-    margin-left: 1rem;	
+    margin-left: 5rem;	
 }
 
 .header-top-inner > .header-nav > .custom-lang-select > .select-selected{
 	line-height: initial;
 	background-size: 1.2rem;
-  background-position-y: center;
+  background-position-y: top;
+  height: 2rem;
+	font-size: 1.2rem;
 }
 
 .header-top-inner > .header-nav > .custom-lang-select > .select-selected:after{
@@ -139,9 +141,22 @@ h3{
 }
 
 .header-nav > a{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: initial;
-		color: #555555;
+    color: #555555;
+}
+
+.header-nav.right > a{
+	padding: .75rem;
+}
+
+.header-nav.right > a:nth-child(2){
+	margin-left: .25rem;
+}
+
+.header-nav.right > a:hover{
+		background-color: #036bf5!important;
+		color: white;
 }
 
 .header-content{
@@ -194,8 +209,8 @@ h3{
 .header-content-text > p{
     margin-top: 1.5rem;
     letter-spacing: -0.0234375rem;
-    color: #222222;
-    font-size: 2.25rem;
+    color: #646f79;
+    font-size: 2.4rem;
     max-width: 100%;
     line-height: initial;
     font-family: "DarwinPro";
@@ -218,9 +233,9 @@ h3{
     width: 90rem;
     max-width: 100%;
     position: relative;
-    top: 3rem;
+    top: 1rem;
     margin: 0 auto;
-    background-image: url(../img/main1.svg);
+    background-image: url(../img/main12.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -240,6 +255,26 @@ h3{
 	 padding: 1rem;
    width: 25rem;
    border: 1px solid #dddddd;
+	border-radius: 4px;
+}
+
+.header-content-form > .form-group > input:focus{
+	border-color: #036bf5;
+}
+
+.header-content-form > .form-group > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbbbbb;
+}
+
+.header-content-form > .form-group > input::-moz-placeholder { /* Firefox 19+ */
+  color: #bbbbbb;
+}
+
+.header-content-form > .form-group > input:-ms-input-placeholder { /* IE 10+ */
+  color: #bbbbbb;
+}
+.header-content-form > .form-group > input:-moz-placeholder { /* Firefox 18- */
+  color: #bbbbbb;
 }
 
 .header-content-form > .btn{
