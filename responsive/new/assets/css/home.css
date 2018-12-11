@@ -149,6 +149,7 @@ h3{
 
 .header-nav.right > a{
 	padding: .75rem;
+    border-radius: 4px;
 }
 
 .header-nav.right > a:nth-child(2){
@@ -236,7 +237,7 @@ h3{
     position: relative;
     top: 1rem;
     margin: 0 auto;
-    background-image: url(../img/main12.svg);
+    background-image: url(../img/main121.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
@@ -648,7 +649,7 @@ section.resume{
 .header-slide-btn{
     width: 0.375rem;
     height: 0.375rem;
-    background-color: #fff;
+    background-color: rgba(19, 132, 218, 0.5);
     border-radius: 50%;
     margin-right: 0.625rem;
     margin-left: 0.625rem;
@@ -665,7 +666,7 @@ section.resume{
 
 .header-slide-btns{
     position: absolute;
-    bottom: 5.75rem;
+    bottom: 4.5rem;
     width: 100%;
     text-align: center;
     z-index: 1000;
@@ -704,11 +705,11 @@ footer{
 
 .header-slider{
     position: absolute;
-    top: 11.5rem;
-    max-height: 30rem;
+    top: 11.75rem;
+    max-height: 29.5rem;
     overflow: hidden;
-    max-width: 59%;
-    margin-left: 20.5%;
+    max-width: 55.75%;
+    margin-left: 22.25%;
 }
 
 #videoPromoModal.modal{
