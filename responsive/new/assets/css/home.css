@@ -118,8 +118,9 @@ h3{
 }
 
 .header-top-inner > .header-nav > .custom-lang-select > .select-items{
-	bottom: calc(-300% - 97px);
-	top: initial;
+    bottom: calc(-300% - 56px);
+    top: initial;
+    left: 15px;
 }
 
 .header-top-inner > .header-nav > .custom-lang-select > .select-items:before{
